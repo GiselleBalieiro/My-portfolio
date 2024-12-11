@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="scroll-smooth">
+<html lang="pt-br" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <script>
+        if (localStorage.getItem('color-theme') === 'dark' || 
+            (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      </script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
 </head>
@@ -24,8 +34,9 @@
         </ul>
         
         <div class="flex items-center gap-4">
-            <button>
-                <img src="./images/moon_icon.png" alt="" class="w-6">
+            <button id="toggleTheme" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <img id="toggleTheme-dark-icon" src="./images/moon_icon.png" alt="" class="hidden w-6 dark:block">
+                <img id="toggleTheme-light-icon" src="./images/sun_icon.png" alt="" class="hidden w-6 dark:hidden"> 
             </button>
     
             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact<img src="./images/arrow-icon.png" alt="" class="w-3 "></a>
@@ -56,14 +67,14 @@
 
 <div class="w-11/12 max-w-3x1 text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
     <img src="./images/my-icon-circle.png" alt="" class="rounded-full w-32">
-    <h3 class="flex items-end gap-2 text-xl md:text-2x1 mb-3">Hi! I'm Giselle Balieiro
+    <h3 class="flex items-end gap-2 text-xl md:text-2x1 mb-3 font-sans">Hi! I'm Giselle Balieiro
         <img src="./images/hand-icon.png" alt="" class="w-6">
     </h3>
-    <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-mono">frontend web developer</h1>
-    <p class="max-w-2xl mx-auto">I'm a frontend developer in Valinhos, a Software Engineering student.</p>
+    <h1 class="font-heading font-bold text-3xl sm:text-6xl lg:text-[66px]">frontend web developer</h1>
+    <p class="max-w-2xl mx-auto font-sans">I'm a frontend developer in Valinhos, a Software Engineering student.</p>
 
     <div class="flex flex-col sm:flex-row items-center gap-4 mt-4"> 
-        <a href="mailto:gisellefbalieiro" target="_blank" class="px-10 py-3 border rounded-full bg-gradient-to-tr from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">Contact me <img src="./images/right-arrow-white.png" alt="" class="w-4"></a>
+        <a href="mailto:gisellefbalieiro" target="_blank" class="px-10 py-3 border rounded-full bg-gradient-to-tr from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 font-sans text-base">Contact me <img src="./images/right-arrow-white.png" alt="" class="w-4"></a>
 
         <a href="./images/Currículo - (Giselle Balieiro).pdf" download="curriculo.pdf" class="px-10 py-3 border rounded-full border-gray-500 bg-white flex items-center gap-2">Download CV<img src="./images/download-icon.png" alt="" class="w-4"></a>
     </div>
