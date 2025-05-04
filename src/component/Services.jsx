@@ -1,40 +1,79 @@
-const Services = () => {
- return (
-  <>
-        <div id="services" className="w-full px-[12%] py-16 scroll-mt-20">
-        <h4 className="text-center mb-2 text-lg">What i offer</h4>
-        <h2 className="text-center text-5xl font-mono">My services</h2>
-        <p className="text-center max-w-2x1 mx-auto mt-5 mb-12">
-          My experience is based on freelance projects
-        </p>
+import "./Services.css";
 
-        <div className="grid grid-cols-2 gap-6 my-10">
-          <div className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#4e4e4e] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-            <img src="./images/web-icon.png" alt="" className="w-10" />
-            <h3 className="text-lg my-4 text-gray-700">Web design</h3>
-            <p className="text-sm text-gray-600 leading-5">
-              Web developer is the process of building, programming...
-            </p>
-            <a href="" className="flex items-center gap-2 text-sm mt-5">
-              Read more
-              <img src="./images/right-arrow.png" alt="" className="w-4" />
-            </a>
-          </div>
-          <div className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-[4px_4px_0_#4e4e4e] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-            <img src="./images/ui-icon.png" alt="" className="w-10" />
-            <h3 className="text-lg my-4 text-gray-700">UI/UX design</h3>
-            <p className="text-sm text-gray-600 leading-5">
-              UI/UX is the process of knowledge and construction.
-            </p>
-            <a href="" className="flex items-center gap-2 text-sm mt-5">
-              Read more
-              <img src="./images/right-arrow.png" alt="" className="w-4" />
-            </a>
+const Services = () => {
+  return (
+    <div id="services" className="w-full py-16 px-4 sm:px-[12%] scroll-mt-20 relative">
+      <h4 className="text-center mb-2 text-lg">What I offer</h4>
+      <h2 className="text-center text-5xl font-mono">My services</h2>
+      <p className="text-center max-w-2xl mx-auto mt-5 mb-12">
+        My experience is based on freelance projects
+      </p>
+
+      <div className="center-border-line"></div>
+
+      <div className="flex flex-col gap-16 relative z-10">
+        <div className="relative flex items-start justify-start">
+          <div className="w-1/2 pr-8 text-right hidden sm:block"></div>
+          <div className="relative w-full sm:w-1/2 sm:pl-8">
+            <div className="absolute -left-4 top-2 w-8 h-8 bg-black border-4 border-rose-300 rounded-full flex items-center justify-center text-black font-bold text-xs">
+              <img src="/images/work_era.svg" alt="Era Logo" className=" border-rose-300 rounded-full" />
+            </div>
+
+            <div className="bg-white text-gray-800 p-6 rounded-lg shadow-md border">
+              <h3 className="text-lg font-semibold text-rose-600">ERA</h3>
+              <h4 className="text-md font-semibold text-rose-500">Analista de Suporte Técnico</h4>
+              <p className="text-sm italic text-gray-500 mb-4">Julho 2024 – Março 2025</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                Configuração de servidores via SSH e containers Docker, correção de arquivos via SFTP e suporte técnico. Também atuei no monitoramento de logs, otimização de desempenho e resolução de problemas.
+              </p>
+              <div className="mt-4">
+                <span className="font-semibold text-rose-600">Techs:</span>
+                <div className="flex gap-2 mt-1 flex-wrap">
+                  <img src="https://img.icons8.com/ios-filled/50/ssh.png" alt="SSH" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/ios-filled/50/sftp.png" alt="SFTP" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/ios-filled/50/docker.png" alt="Docker" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JS" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/fluency/48/microsoft-excel-2019.png" alt="Excel" className="w-6 h-6" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div className="relative flex items-start justify-end">
+          <div className="relative w-full sm:w-1/2 sm:pr-8">
+            <div className="absolute -right-4 top-2 w-8 h-8 bg-black border-4 border-rose-300 rounded-full flex items-center justify-center text-black font-bold text-xs">
+            <img src="/images/work_era.svg" alt="Era Logo" className=" border-rose-300 rounded-full" />
+            </div>
+
+            <div className="bg-white text-gray-800 p-6 rounded-lg shadow-md border">
+              <h3 className="text-lg font-semibold text-rose-600">ERA</h3>
+              <h4 className="text-md font-semibold text-rose-500">Desenvolvedor Jr.</h4>
+              <p className="text-sm italic text-gray-500 mb-4">Full Stack Developer · Março 2025 – Presente</p>
+              <p className="text-sm text-gray-700 leading-relaxed">
+              Desenvolvo soluções completas atuando tanto no front-end quanto no back-end, contribuindo para interfaces funcionais e uma melhor experiência do usuário com responsividade. Também realizo o consumo de APIs para garantir a comunicação entre diferentes sistemas e serviços. Por fim, sou responsável pela análise de Data Base, identificando e corrigindo inconsistências que possam comprometer a integridade dos dados.
+              </p>
+              <div className="mt-4">
+                <span className="font-semibold text-rose-600">Techs:</span>
+                <div className="flex gap-2 mt-1 flex-wrap">
+                  <img src="https://img.icons8.com/ios-filled/50/ssh.png" alt="SSH" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/ios-filled/50/sftp.png" alt="SFTP" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/ios-filled/50/docker.png" alt="Docker" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JS" className="w-6 h-6" />
+                  <img src="https://img.icons8.com/fluency/48/microsoft-excel-2019.png" alt="Excel" className="w-6 h-6" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 pl-8 text-left hidden sm:block"></div>
+        </div>
+
       </div>
-  </>
- )
-}
+    </div>
+  );
+};
+
 
 export default Services;
