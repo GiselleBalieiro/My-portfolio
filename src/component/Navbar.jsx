@@ -7,16 +7,16 @@ const Navbar = () => {
   function openMenu() {
     const menu = sideMenu.current;
     if (menu) {
-      menu.classList.remove('translate-x-64');
-      menu.classList.add('-translate-x-64');
+      menu.classList.remove('-right-full');
+      menu.classList.add('right-0');
     }
   }
-
+  
   function closeMenu() {
     const menu = sideMenu.current;
     if (menu) {
-      menu.classList.remove('-translate-x-64');
-      menu.classList.add('translate-x-64');
+      menu.classList.remove('right-0');
+      menu.classList.add('-right-full');
     }
   }
 
@@ -68,7 +68,7 @@ const Navbar = () => {
 
         <ul
           ref={sideMenu}
-           className="flex md:hidden flex-col gap-6 py-16 px-8 fixed -right-full top-0 bottom-0 w-72 z-50 h-screen bg-gradient-to-b from-rose-50 to-white dark:bg-gradient-to-b dark:from-zinc-700 dark:to-zinc-900 shadow-lg transition-transform duration-500"
+          className="flex md:hidden flex-col gap-6 py-16 px-8 fixed -right-full top-0 bottom-0 w-72 z-50 h-screen bg-gradient-to-b from-rose-50 to-white dark:bg-gradient-to-b dark:from-zinc-700 dark:to-zinc-900 shadow-lg transition-transform duration-500"
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <img
