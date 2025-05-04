@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --color-bg: 255 255 255; 
+    --color-text: 31 41 55; 
+    --color-primary: 79 70 229;
+  }
+
+  .dark {
+    --color-bg: 17 24 39; 
+    --color-text: 243 244 246; 
+    --color-primary: 129 140 248; 
+  }
+
+  html {
+    @apply bg-[rgb(var(--color-bg))] text-[rgb(var(--color-text))];
+    transition: background-color 0.3s, color 0.3s;
+  }
+}

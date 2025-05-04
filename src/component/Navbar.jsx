@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const sideMenu = useRef(null);
@@ -27,7 +28,7 @@ const Navbar = () => {
           alt="Logo"
           className="w-36 cursor-pointer mr-14"
         />
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 ">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white dark:bg-zinc-700 shadow-sm bg-opacity-50">
           <li>
             <a href="#top">Home</a>
           </li>
@@ -46,24 +47,7 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <button
-            id="toggleTheme"
-            type="button"
-            className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
-          >
-            <img
-              id="toggleTheme-dark-icon"
-              src="./images/moon_icon.png"
-              alt=""
-              className="hidden w-6"
-            />
-            <img
-              id="toggleTheme-light-icon"
-              src="./images/sun_icon.png"
-              alt=""
-              className="hidden w-6"
-            />
-          </button>
+          <ThemeToggle />
 
           <a
             href="#contact"

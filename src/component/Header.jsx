@@ -31,7 +31,7 @@ const Header = () => {
           <a
             href="./images/Currículo - (Giselle Balieiro).pdf"
             download="curriculo.pdf"
-            className="px-10 py-3 border rounded-full border-gray-500 bg-white flex items-center gap-2"
+            className="px-10 py-3 border rounded-full border-gray-500 dark:border-zinc-600 bg-white dark:bg-zinc-700 flex items-center gap-2"
           >
             Download CV
             <img src="./images/download-icon.png" alt="" className="w-4" />

@@ -7,11 +7,17 @@ import Projects from "./component/Projects";
 import Services from "./component/Services";
 
 
-function App() {
+function App(darkMode) {
   return (
     <>
+    <div className="min-h-screen bg-white dark:bg-zinc-800 transition-colors duration-300">
+
+    
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+      {darkMode ? null : (
         <img src="./images/header-bg-color.png" alt="" className="w-full" />
+      )}
+        
       </div>
 
       <Navbar />
@@ -27,6 +33,7 @@ function App() {
       <Contact />
 
       <Footer />
+      </div>
     </>
   );
 }
