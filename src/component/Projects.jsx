@@ -38,7 +38,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="border rounded-full border-black dark:border-white w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#4e4e4e] group-hover:bg-zinc-500 transition">
-                  <img src="./images/send-icon.png" alt="" className="w-5" />
+                  <img src="/images/send-icon.png" alt="" className="w-5" />
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="border rounded-full border-black dark:border-white w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#4e4e4e] group-hover:bg-zinc-500 transition">
-                  <img src="./images/send-icon.png" alt="" className="w-5" />
+                  <img src="/images/send-icon.png" alt="" className="w-5" />
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="border rounded-full border-black dark:border-white w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#4e4e4e] group-hover:bg-zinc-500 transition">
-                  <img src="./images/send-icon.png" alt="" className="w-5" />
+                  <img src="/images/send-icon.png" alt="" className="w-5" />
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Projects = () => {
           className="w-max flex items-center hover:bg-black bg-black/80 dark:bg-zinc-600 dark:hover:bg-zinc-700 justify-center gap-2 text-white dark:text-zinc-100 border-[0.5px] border-gray-700 dark:border-white rounded-full py-3 px-10 mx-auto my-20"
         >
           Show more
-          <img src="./images/right-arrow-white.png" alt="" className="w-4" />
+          <img src="/images/right-arrow-white.png" alt="" className="w-4" />
         </a>
       </div>
     </>
