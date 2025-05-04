@@ -21,13 +21,13 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 backdrop-blur-lg">
         <img
           src="./images/logo-white.png"
           alt="Logo"
           className="w-36 cursor-pointer mr-14"
         />
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 ">
           <li>
             <a href="#top">Home</a>
           </li>
@@ -35,10 +35,10 @@ const Navbar = () => {
             <a href="#about">About Me</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#services">Experience</a>
           </li>
           <li>
-            <a href="#work">My Work</a>
+            <a href="#work">Projects</a>
           </li>
           <li>
             <a href="#contact">Contact Me</a>
@@ -104,12 +104,12 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#services" onClick={closeMenu}>
-              Services
+              Experience
             </a>
           </li>
           <li>
             <a href="#work" onClick={closeMenu}>
-              My Work
+              Projects
             </a>
           </li>
           <li>
