@@ -3,11 +3,9 @@ const Footer = () => {
     <>
           <div className="mt-20">
         <div className="text-center">
-          <img
-            src="./images/logo-white.png"
-            alt=""
-            className="w-36 mx-auto mb2"
-          />
+        <h2 className="text-3xl font-bold text-black mb-2 cursor-pointer dark:text-white" style={{ fontFamily:  "'Oswald', sans-serif", }}>
+          Giselle<span className="text-purple-500">.</span>
+        </h2>
           <div className="w-max flex items-center gap-2 mx-auto">
             <a href="mailto:gisellefbalieiro@outlook.com">
               <img src="./images/mail_icon.png" alt="" className="w-6" />

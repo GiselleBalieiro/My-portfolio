@@ -29,3 +29,9 @@
 #services {
   overflow: hidden;
 }
+
+@media (min-width: 640px) {
+  .center-border-line {
+    left: 50%;
+  }
+}

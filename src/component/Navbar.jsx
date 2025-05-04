@@ -23,11 +23,9 @@ const Navbar = () => {
   return (
     <>
         <nav className="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 backdrop-blur-lg">
-        <img
-          src="./images/logo-white.png"
-          alt="Logo"
-          className="w-36 cursor-pointer mr-14"
-        />
+        <h2 className="text-3xl font-bold text-black cursor-pointer mr-14 dark:text-white" style={{ fontFamily:  "'Oswald', sans-serif", }}>
+          Giselle<span className="text-purple-500">.</span>
+        </h2>
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white dark:bg-zinc-700 shadow-sm bg-opacity-50">
           <li>
             <a href="#top">Home</a>

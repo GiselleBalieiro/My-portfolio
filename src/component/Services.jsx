@@ -14,7 +14,7 @@ const Services = () => {
           in a contracted professional setting.
         </p>
       </div>
-
+ 
       <div className="relative min-h-[400px]">
         <div
           className="center-border-line"
@@ -35,13 +35,13 @@ const Services = () => {
 
               <div
                 id="container1"
-                className="bg-white dark:bg-zinc-700 text-gray-800 p-6 rounded-lg shadow-md border dark:border-zinc-600 "
+                className="bg-white dark:bg-zinc-700 text-gray-800 p-6 rounded-lg shadow-md border dark:border-zinc-400 "
               >
-                <h3 className="text-lg font-semibold text-rose-600">ERA</h3>
-                <h4 className="text-md font-semibold text-rose-500">
+                <h3 className="text-lg font-semibold text-rose-600 dark:text-rose-400">ERA</h3>
+                <h4 className="text-md font-semibold text-rose-500 dark:text-rose-300">
                   Analista de Suporte Técnico
                 </h4>
-                <p className="text-sm italic text-gray-500 mb-4">
+                <p className="text-sm italic text-gray-500 dark:text-zinc-300 mb-4">
                   Julho 2024 – Março 2025
                 </p>
                 <p className="text-sm text-gray-700 dark:text-zinc-100 leading-relaxed">
@@ -51,7 +51,7 @@ const Services = () => {
                   de problemas.
                 </p>
                 <div className="mt-4">
-                  <span className="font-semibold text-rose-600">Techs:</span>
+                  <span className="font-semibold text-rose-600 dark:text-rose-400">Techs:</span>
                   <div className="flex gap-2 mt-1 flex-wrap">
                     <img
                       src="https://img.icons8.com/ios-filled/50/ssh.png"
@@ -91,13 +91,13 @@ const Services = () => {
 
               <div
                 id="container2"
-                className="bg-white dark:bg-zinc-700 text-gray-800 p-6 rounded-lg shadow-md border dark:border-zinc-600 "
+                className="bg-white dark:bg-zinc-700 text-gray-800 p-6 rounded-lg shadow-md border dark:border-zinc-400"
               >
-                <h3 className="text-lg font-semibold text-rose-600">ERA</h3>
-                <h4 className="text-md font-semibold text-rose-500">
+                <h3 className="text-lg font-semibold text-rose-600 dark:text-rose-400">ERA</h3>
+                <h4 className="text-md font-semibold text-rose-500  dark:text-rose-300">
                   Desenvolvedor Jr.
                 </h4>
-                <p className="text-sm italic text-gray-500 mb-4">
+                <p className="text-sm italic text-gray-500 dark:text-zinc-300 mb-4">
                   Full Stack Developer · Março 2025 – Presente
                 </p>
                 <p className="text-sm text-gray-700 dark:text-zinc-100 leading-relaxed">
@@ -111,7 +111,7 @@ const Services = () => {
                   dados.
                 </p>
                 <div className="mt-4">
-                  <span className="font-semibold text-rose-600">Techs:</span>
+                  <span className="font-semibold text-rose-600 dark:text-rose-400">Techs:</span>
                   <div className="flex gap-2 mt-1 flex-wrap">
                     <img
                       src="https://img.icons8.com/color/48/javascript--v1.png"
