@@ -7,9 +7,9 @@ const Services = () => {
       className="w-full py-16 px-4 sm:px-[12%] scroll-mt-20 relative"
     >
       <div id="header" className="mb-12">
-        <h4 className="text-center mb-2 text-lg">What I offer</h4>
+        <h4 className="text-center mb-2 text-lg dark:text-zinc-400">What I offer</h4>
         <h2 className="text-center text-5xl font-mono">My experience</h2>
-        <p className="text-center max-w-2xl mx-auto mt-5">
+        <p className="text-center max-w-2xl mx-auto mt-5 dark:text-zinc-300">
           My experience includes personal projects as well as projects developed
           in a contracted professional setting.
         </p>
@@ -17,19 +17,19 @@ const Services = () => {
  
       <div className="relative min-h-[400px]">
         <div
-          className="center-border-line"
+          className="center-border-line hidden sm:block "
           style={{ height: '100%', top: '0', bottom: '0' }}
         ></div>
 
-        <div className="flex flex-col gap-16 relative z-10">
+        <div className="flex flex-col gap-14 relative z-10">
           <div className="relative flex items-start justify-start">
             <div className="w-1/2 pr-8 text-right hidden sm:block"></div>
             <div className="relative w-full sm:w-1/2 sm:pl-8">
-              <div className="absolute -left-4 top-2 w-8 h-8 bg-black border-4 border-rose-300 rounded-full">
+              <div className="absolute -left-4 top-2 w-8 h-8 bg-black border-4 border-rose-300 rounded-full hidden sm:block">
                 <img
-                  src="/images/work_era.svg"
+                  src="/images/image.png"
                   alt="Era Logo"
-                  className="rounded-full"
+                  className="rounded-full "
                 />
               </div>
 
@@ -56,15 +56,15 @@ const Services = () => {
                     <img
                       src="https://img.icons8.com/ios-filled/50/ssh.png"
                       alt="SSH"
-                      className="w-6 h-6"
+                      className="w-6 h-6 dark:invert"
                     />
                     <img
                       src="https://img.icons8.com/ios-filled/50/upload-to-ftp.png"
                       alt="SFTP"
-                      className="w-6 h-6"
+                      className="w-6 h-6 dark:invert"
                     />
                     <img
-                      src="https://img.icons8.com/ios-filled/50/docker.png"
+                      src="https://img.icons8.com/color/48/docker.png"
                       alt="Docker"
                       className="w-6 h-6"
                     />
@@ -81,9 +81,9 @@ const Services = () => {
 
           <div className="relative flex items-start justify-end">
             <div className="relative w-full sm:w-1/2 sm:pr-8">
-              <div className="absolute -right-4 top-2 w-8 h-8 bg-black border-4 border-rose-300 rounded-full">
+              <div className="absolute -right-4 top-2 w-8 h-8 bg-black border-4 border-rose-300 rounded-full hidden sm:block">
                 <img
-                  src="/images/work_era.svg"
+                  src="/images/image.png"
                   alt="Era Logo"
                   className="rounded-full"
                 />
@@ -151,7 +151,7 @@ const Services = () => {
                     <img
                       src="https://img.icons8.com/ios-filled/50/github.png"
                       alt="GitHub"
-                      className="w-6 h-6"
+                      className="w-6 h-6 dark:invert"
                     />
                   </div>
                 </div>

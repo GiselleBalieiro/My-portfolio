@@ -2,7 +2,7 @@ const AboutMe = () => {
   return (
     <>
       <div id="about" className="my-28 w-full px-[12%] py-10 scroll-mt-35  ">
-        <h4 className="text-center mb-2 text-lg">Introduction</h4>
+        <h4 className="text-center mb-2 text-lg dark:text-zinc-400">Introduction</h4>
         <h2 className="text-center text-5xl font-mono">About me</h2>
 
         <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20 lg:ml-[10%] ">
@@ -27,7 +27,7 @@ const AboutMe = () => {
           </div>
 
           <div className="flex-1">
-            <p className="mb-10 max-w-2xl">
+            <p className="mb-10 max-w-2xl ">
               I want to graduate in Software Engineering and specialize in
               Front-end.
             </p>

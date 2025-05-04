@@ -6,9 +6,9 @@ const Contact = (darkMode) => {
         id="contact"
         className={`w-full px-[12%] py-10 scroll-mt-20 {${darkMode} ? '' : bg-[url('./images/footer-bg-color.png')]} bg-no-repeat bg-[length:90%_auto] bg-center`}
       >
-        <h4 className="text-center mb-2 text-lg">Connect with me</h4>
+        <h4 className="text-center mb-2 text-lg dark:text-zinc-400">Connect with me</h4>
         <h2 className="text-center text-5xl font-mono">Get in touch</h2>
-        <p className="text-center max-w-2x1 mx-auto mt-5 mb-12">
+        <p className="text-center max-w-2x1 mx-auto mt-5 mb-12 dark:text-zinc-300">
           I'd love to hear from you! If you have any questions, comments or
           feedback, please use the form below.
         </p>
