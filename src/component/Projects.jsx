@@ -10,7 +10,7 @@ const Projects = () => {
 
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5">
           <a href="https://expense-converter-three.vercel.app/" target="_blank">
-            <div className="aspect-square bg-[url('./images/converter.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div className="aspect-square bg-[url('/images/converter.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
               <div className="bg-white dark:bg-zinc-600 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                 <div>
                   <h2 className="font-semibold dark:text-zinc-100">Expense Converter</h2>
@@ -19,7 +19,7 @@ const Projects = () => {
                   </p>
                 </div>
                 <div className="border rounded-full border-black dark:border-white w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#4e4e4e] group-hover:bg-zinc-500 transition">
-                  <img src="./images/send-icon.png" alt="" className="w-5" />
+                  <img src="/images/send-icon.png" alt="" className="w-5" />
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@ const Projects = () => {
             href="https://github.com/GiselleBalieiro/serenatto-project"
             target="_blank"
           >
-            <div className="aspect-square bg-[url('./images/Serenatto.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div className="aspect-square bg-[url('/images/Serenatto.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
               <div className="bg-white dark:bg-zinc-600 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                 <div>
                   <h2 className="font-semibold dark:text-zinc-100">Serenatto</h2>
@@ -45,7 +45,7 @@ const Projects = () => {
           </a>
 
           <a href="https://fokus-project-ten.vercel.app" target="_blank">
-            <div className="aspect-square bg-[url('./images/teste2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div className="aspect-square bg-[url('/images/teste2.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
               <div className="bg-white dark:bg-zinc-600 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                 <div>
                   <h2 className="font-semibold dark:text-zinc-100">Fokus</h2>
@@ -64,7 +64,7 @@ const Projects = () => {
             href="https://product-registration-psi.vercel.app/"
             target="_blank"
           >
-            <div className="aspect-square bg-[url('./images/teste.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+            <div className="aspect-square bg-[url('/images/teste.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
               <div className="bg-white dark:bg-zinc-600 w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                 <div>
                   <h2 className="font-semibold dark:text-zinc-100">Product Registration</h2>
