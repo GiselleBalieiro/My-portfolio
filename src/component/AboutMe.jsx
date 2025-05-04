@@ -38,8 +38,7 @@ const AboutMe = () => {
                   Languages
                 </h3>
                 <p className="text-gray-600 dark:text-zinc-400 text-sm">
-                  JavaScript, TypeScript, Node.JS, React, PHP, MySQL,
-                  PostgreSQL, MongoDB Atlas, Docker, HTML, CSS and Tailwind.
+                  JavaScript, PHP, Node.JS, React, MySQL, HTML, CSS and Tailwind.
                 </p>
               </li>
               <li className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:dark:bg-zinc-500 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#4e4e4e]">
@@ -61,7 +60,7 @@ const AboutMe = () => {
                   Projects
                 </h3>
                 <p className="text-gray-600 dark:text-zinc-400 text-sm">
-                  I currently have 15 projects posted on GitHub
+                  I currently have 25 projects posted on GitHub
                 </p>
               </li>
             </ul>
@@ -71,7 +70,11 @@ const AboutMe = () => {
 
             <ul className="flex items-center gap-3 sm:gap-5">
               <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                <img src="./images/vscode.png" alt="" className="w-5 sm:w-7" />
+              <img
+                src="https://img.icons8.com/officel/40/php-logo.png"
+                alt="PHP"
+                className="w-6 h-6"
+              />
               </li>
               <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
                 <img
@@ -88,6 +91,13 @@ const AboutMe = () => {
                 />
               </li>
               <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+              <img
+                src="https://img.icons8.com/color/48/mysql-logo.png"
+                alt="MySQL"
+                className="w-6 h-6"
+              />
+              </li>
+              <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
                 <img
                   src="./images/node_js_logo-1024.webp"
                   alt=""
@@ -95,7 +105,11 @@ const AboutMe = () => {
                 />
               </li>
               <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                <img src="./images/figma.png" alt="" className="w-5 sm:w-7" />
+              <img
+                src="https://img.icons8.com/officel/40/react.png"
+                alt="React"
+                className="w-6 h-6"
+              />
               </li>
               <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
                 <img src="./images/git.png" alt="" className="w-5 sm:w-7" />

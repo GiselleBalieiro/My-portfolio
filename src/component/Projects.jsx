@@ -5,8 +5,7 @@ const Projects = () => {
         <h4 className="text-center mb-2 text-lg dark:text-zinc-400">My portfolio</h4>
         <h2 className="text-center text-5xl font-mono">My latest projects</h2>
         <p className="text-center max-w-2x1 mx-auto mt-5 mb-12 dark:text-zinc-300">
-          Welcome to my web development portfolio! Explore a collection of
-          projects showcasing my expertise in front-end development.
+        Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in full-stack development.
         </p>
 
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-10 gap-5">
@@ -83,7 +82,7 @@ const Projects = () => {
         <a
           href="https://github.com/GiselleBalieiro"
           target="_blank"
-          className="w-max flex items-center hover:bg-black bg-black/80 dark:bg-zinc-600 justify-center gap-2 text-white dark:text-zinc-100 border-[0.5px] border-gray-700 dark:boder-white rounded-full py-3 px-10 mx-auto my-20"
+          className="w-max flex items-center hover:bg-black bg-black/80 dark:bg-zinc-600 dark:hover:bg-zinc-700 justify-center gap-2 text-white dark:text-zinc-100 border-[0.5px] border-gray-700 dark:border-white rounded-full py-3 px-10 mx-auto my-20"
         >
           Show more
           <img src="./images/right-arrow-white.png" alt="" className="w-4" />

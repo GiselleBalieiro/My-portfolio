@@ -22,7 +22,7 @@ const Header = () => {
           <a
             href="mailto:gisellefbalieiro"
             target="_blank"
-            className="px-10 py-3 border rounded-full bg-gradient-to-tr from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 font-sans text-base"
+            className="px-10 py-3 border rounded-full bg-gradient-to-tr from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2 font-sans text-base dark:border-white"
           >
             Contact me{' '}
             <img src="./images/right-arrow-white.png" alt="" className="w-4" />
@@ -31,7 +31,7 @@ const Header = () => {
           <a
             href="./images/Currículo - (Giselle Balieiro).pdf"
             download="curriculo.pdf"
-            className="px-10 py-3 border rounded-full border-gray-500 dark:border-zinc-600 bg-white dark:bg-zinc-700 flex items-center gap-2"
+            className="px-8 py-3 border rounded-full border-gray-500 dark:border-white bg-white dark:bg-zinc-700 flex items-center gap-2"
           >
             Download CV
             <img src="./images/download-icon.png" alt="" className="w-4" />
