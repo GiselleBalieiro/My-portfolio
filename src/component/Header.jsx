@@ -29,7 +29,7 @@ const Header = () => {
           </a>
 
           <a
-            href="./images/Currículo - (Giselle Balieiro).pdf"
+            href="./images/Currículo - Giselle Balieiro.pdf"
             download="curriculo.pdf"
             className="px-8 py-3 border rounded-full border-gray-500 dark:border-white bg-white dark:bg-zinc-700 flex items-center gap-2"
           >
