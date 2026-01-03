@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    
+    /* Backgrounds */
+    --bg-primary: 255 255 255;           /* #ffffff */
+    --bg-secondary: 249 250 251;         /* #f9fafb */
+    --bg-tertiary: 243 244 246;          /* #f3f4f6*/
+    --bg-card: 255 255 255;              /* #ffffff */
+    --bg-hover: 243 244 246;             /* #f3f4f6 */
+
+    /* Text Colors */
+    --text-primary: 17 24 39;            /* #111827 */
+    --text-secondary: 107 114 128;       /* #6b7280 */
+    --text-tertiary: 156 163 175;        /* #9ca3af */
+    --text-inverse: 255 255 255;         /* #ffffff */
+
+    /* Borders */
+    --border-primary: 229 231 235;       /* #e5e7eb */
+    --border-secondary: 209 213 219;     /* #d1d5db */
+
+    /* Brand Colors */
+    --brand-blue: 14 165 233;            /* #0ea5e9 */
+    --brand-indigo: 99 102 241;          /* #6366f1 */
+    --brand-purple: 139 92 246;          /* #8b5cf6 */
+
+    /* Accent Colors */
+    --accent-success: 16 185 129;        /* #10b981 */
+    --accent-warning: 245 158 11;        /* #f59e0b */
+    --accent-error: 239 68 68;           /* #ef4444 */
+    --accent-info: 59 130 246;           /* #3b82f6 */
+
+    /* Tech Stack Badge Colors */
+    --badge-html: 227 76 38;             /* #e34c26 */
+    --badge-css: 21 114 182;             /* #1572b6 */
+    --badge-js: 247 223 30;              /* #f7df1e */
+    --badge-ts: 49 120 198;              /* #3178c6 */
+    --badge-react: 97 218 251;           /* #61dafb */
+    --badge-nextjs: 0 0 0;               /* #000000 */
+    --badge-tailwind: 6 182 212;         /* #06b6d4 */
+    --badge-nodejs: 51 153 51;           /* #339933 */
+    --badge-mongodb: 0 237 100;          /* #00ed64 */
+    --badge-php: 119 123 180;            /* #777bb4 */
+    --badge-mysql: 68 121 161;           /* #4479a1 */
+    --badge-postgresql: 51 103 145;      /* #336791 */
+  }
+
+  .dark {
+
+    /* Backgrounds */
+    --bg-primary: 0 0 0;                 /* #000000 */
+    --bg-secondary: 10 10 10;            /* #0a0a0a */
+    --bg-tertiary: 20 20 20;             /* #141414 */
+    --bg-card: 15 15 15;                 /* #0f0f0f */
+    --bg-hover: 26 26 26;                /* #1a1a1a */
+
+    /* Text Colors */
+    --text-primary: 255 255 255;         /* #ffffff */
+    --text-secondary: 160 160 160;       /* #a0a0a0 */
+    --text-tertiary: 115 115 115;        /* #737373 */
+    --text-inverse: 0 0 0;               /* #000000 */
+
+    /* Borders */
+    --border-primary: 38 38 38;          /* #262626 */
+    --border-secondary: 64 64 64;        /* #404040 */
+  }
+
+  /* === TYPOGRAPHY === */
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, pre {
+    font-family: 'Fira Code', 'Courier New', monospace;
+  }
+}
+
+@layer components {
+  /* Base Badge Style */
+  .badge {
+    @apply px-3 py-1.5 rounded-md text-xs font-medium text-white inline-block uppercase tracking-wide;
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-brand-indigo text-white px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-bg-card border border-border-primary text-text-primary px-6 py-3 rounded-lg font-medium hover:bg-bg-hover transition-all duration-200;
+  }
+
+  .btn-outline {
+    @apply border-2 border-brand-blue text-brand-blue px-6 py-3 rounded-lg font-medium hover:bg-brand-blue hover:text-white transition-all duration-200;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply bg-bg-card border border-border-primary rounded-xl p-6 transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:border-border-secondary hover:shadow-lg cursor-pointer;
+  }
+
+  /* Link Styles */
+  .link {
+    @apply text-brand-blue hover:underline transition-all duration-200;
+  }
+}
