@@ -1,22 +1,22 @@
 export default function Main() {
   return (
-    <div>
+    <div className="flex items-center justify-between pl-80 pr-10">
       <div className="flex flex-col">
         <img
           src="./images/my-icon-circle.png"
           alt=""
-          className="rounded-full w-32"
+          className="rounded-full w-62"
         />
-        <div className="flex flex-col text-base">
-          <h2 className="text-primary">Giselle Balieiro</h2>
-          <span className="text-secondary">Software Engineering</span>
+        <div className="pl-4">
+          <div className="flex flex-col text-base mb-4 mt-4">
+            <h2 className="text-[#E5E7EB]">Giselle Balieiro</h2>
+            <span className="text-[#6B7280]">Software Engineering</span>
+          </div>
+          <div className="flex flex-col text-secondary text-sm">
+            <span>ERA</span>
+            <span>Campinas - São Paulo</span>
+          </div>
         </div>
-        <div className="flex flex-col text-secondary text-sm">
-          <span>ERA</span>
-          <span>Campinas - São Paulo</span>
-          <a  className="text-brand-blue" href="https://www.linkedin.com/in/gisellebalieiro" target="_blank" rel="noopener noreferrer">Linkedin</a>
-        </div>
-
       </div>
     </div>
   )

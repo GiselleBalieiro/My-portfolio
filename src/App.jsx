@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Main from "./component/Main";
+import Home from './component/Home';
 
 function App() {
 const [isDark, setIsDark] = useState(true)
@@ -14,11 +15,17 @@ useEffect(() => {
 
 return (
   <>
-    <Main />
-    
+    <div className="flex flex-row mt-40">
+      <Main />
+
+      <Home />
+
+    </div>
+    {/*
     <button onClick={() => setIsDark(!isDark)}>
       Alterar Theme
     </button>
+    */}
   </>
 )
 }
