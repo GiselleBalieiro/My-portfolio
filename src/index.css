@@ -1,23 +1,62 @@
 @import "tailwindcss";
 
+@theme {
+  /* Fontes */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+  --font-heading: "Poppins", sans-serif;
 
-@custom-variant dark (&:where(.dark, .dark *));
+  /* Cores de Fundo (Uso: bg-primary, bg-secondary) */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+
+  /* Cores de Texto (Uso: text-primary, text-secondary) */
+  --color-text-primary: var(--text-p);
+  --color-text-secondary: var(--text-s);
+  
+  /* Cores de Brand e Badges */
+  --color-brand-indigo: #6366f1;
+  --color-brand-blue: #3b82f6;
+}
 
 @layer base {
   :root {
-    --color-bg: 255 255 255; 
-    --color-text: 31 41 55; 
-    --color-primary: 79 70 229;
+    /* Cores Modo Claro */
+    --bg-primary: #f3f4f6;    
+    --bg-secondary: #ffffff;  
+    --bg-tertiary: #e5e7eb;   
+
+    --text-p: #111827;       
+    --text-s: #4b5563;        
+    
+    --border-p: #d1d5db;
   }
 
   .dark {
-    --color-bg: 17 24 39; 
-    --color-text: 243 244 246; 
-    --color-primary: 129 140 248; 
+    /* Cores Modo Escuro */
+    --bg-primary: #0a0a0a;    
+    --bg-secondary: #141414;  
+    --bg-tertiary: #262626;
+
+    --text-p: #f9fafb;
+    --text-s: #9ca3af;
+    
+    --border-p: #262626;
   }
 
-  html {
-    @apply bg-[rgb(var(--color-bg))] text-[rgb(var(--color-text))];
-    transition: background-color 0.3s, color 0.3s;
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-p);
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .card-project {
+    @apply bg-bg-secondary border-[1px] border-[--border-p] rounded-xl p-6 transition-all hover:shadow-md;
+  }
+  
+  .btn-view {
+    @apply bg-brand-indigo text-white px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity flex items-center gap-2;
   }
 }
