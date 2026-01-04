@@ -25,7 +25,7 @@ function App() {
         <Main />
         <div className="flex flex-col">
           <Tab activeTab={activeTab} setActiveTab={setActiveTab} />
-          <div className="rounded-xl shadow border border-[#1F2937] p-6 w-full h-full flex flex-col mt-10">
+          <div className="rounded-xl shadow border border-[#1F2937] p-6 w-full h-full flex flex-col mt-10 max-w-[800px] overflow-auto">
             {activeTab === 'Home' ? (
               <Home />
             ) : activeTab === 'Experience' ? (
