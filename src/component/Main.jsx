@@ -1,6 +1,6 @@
 export default function Main() {
   return (
-    <div className="flex items-center justify-between pl-80 pr-10">
+    <div className="flex">
       <div className="flex flex-col">
         <img
           src="./images/my-icon-circle.png"
