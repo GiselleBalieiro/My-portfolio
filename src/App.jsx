@@ -3,6 +3,7 @@ import Main from './component/Main';
 import Home from './component/Home';
 import Tab from './component/Tab';
 import Experience from './component/Experience';
+import Projects from './component/Projects';
 
 function App() {
   const [isDark, setIsDark] = useState(true);
@@ -30,7 +31,8 @@ function App() {
               <Home />
             ) : activeTab === 'Experience' ? (
               <Experience />
-            ) : null}
+            ) : activeTab === 'Projects' ? (
+              <Projects /> ) : null}
           </div>
         </div>
       </div>
