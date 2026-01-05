@@ -19,10 +19,7 @@ function App() {
 
   return (
     <>
-      <div
-        className="flex flex-row justify-center
-    gap-20 p-10"
-      >
+      <div className="flex flex-row justify-center gap-20 p-10">
         <Main />
         <div className="flex flex-col">
           <Tab activeTab={activeTab} setActiveTab={setActiveTab} />
