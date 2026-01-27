@@ -1,4 +1,20 @@
 import { FaExternalLinkAlt, FaAward, FaBookOpen, FaGraduationCap, FaClock } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1
+        }
+    }
+};
+
+const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 }
+};
 
 export default function Certificates() {
     const education = [
@@ -119,7 +135,7 @@ export default function Certificates() {
             issuer: "Alura",
             date: "10 de dezembro de 2024",
             description: "Controle de versão completo com Git e GitHub, desde comandos básicos até trabalho em equipe.",
-            link: "https://cursos.alura.com.br/certificate/ad8652cb-d04c-4cf8-a509-776793680965?lang=pt_BR",
+            link: "https://cursos.alura.com.br/certificate/ad8652cb-d04c-4cf8-a16e-0dede3207c5b?lang=pt_BR",
             hours: "8h"
         },
         {
@@ -161,33 +177,39 @@ export default function Certificates() {
     ];
 
     return (
-        <div className="mt-6 mb-6 w-full">
-            <div className="mb-6">
+        <motion.div
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="mt-6 mb-6 w-full"
+        >
+            <motion.div variants={item} className="mb-6">
                 <h1 className="text-text-primary text-3xl">Certificates & Courses</h1>
                 <span className="text-text-secondary text-[14px]">
                     My academic achievements and professional development updates.
                 </span>
-            </div>
+            </motion.div>
 
-            <div className="mb-8 w-full">
+            <motion.div variants={item} className="mb-8 w-full">
                 <div className="p-6 rounded-xl border border-brand-indigo/50 bg-brand-indigo/5 w-full">
                     <h3 className="text-text-primary text-lg font-semibold">{education[0].title}</h3>
                     <span className="text-text-secondary text-sm block mt-1">{education[0].issuer}</span>
                     <span className="text-text-secondary text-sm mt-2 block">{education[0].description}</span>
                     <span className="text-text-secondary text-sm mt-2 block">{education[0].date}</span>
                 </div>
-            </div>
+            </motion.div>
 
             <div className="flex flex-col gap-6 w-full">
-                {items.map((item, index) => (
-                    <div
+                {items.map((itemData, index) => (
+                    <motion.div
+                        variants={item}
                         key={index}
                         className="flex flex-col gap-4 p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full card-project"
                     >
                         <div className="flex justify-between items-start">
                             <div className="flex items-center gap-3">
                                 <div className="p-2 bg-bg-tertiary rounded-lg">
-                                    {item.type === "Certificate" ? (
+                                    {itemData.type === "Certificate" ? (
                                         <FaAward className="text-brand-indigo text-xl" />
                                     ) : (
                                         <FaBookOpen className="text-brand-indigo text-xl" />
@@ -195,16 +217,16 @@ export default function Certificates() {
                                 </div>
                                 <div>
                                     <h2 className="text-text-primary text-lg font-semibold">
-                                        {item.title}
+                                        {itemData.title}
                                     </h2>
                                     <span className="text-text-secondary text-sm">
-                                        {item.issuer} • {item.date}
+                                        {itemData.issuer} • {itemData.date}
                                     </span>
                                 </div>
                             </div>
-                            {item.link && item.link !== "#" && (
+                            {itemData.link && itemData.link !== "#" && (
                                 <a
-                                    href={item.link}
+                                    href={itemData.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-text-secondary hover:text-text-primary transition-colors"
@@ -215,24 +237,24 @@ export default function Certificates() {
                         </div>
 
                         <p className="text-text-secondary text-sm leading-relaxed">
-                            {item.description}
+                            {itemData.description}
                         </p>
 
                         <div className="flex flex-wrap gap-2 mt-2 items-center justify-between w-full">
-                            <span className={`text-xs px-2 py-1 rounded-full border ${item.type === 'Certificate' ? 'border-brand-indigo/30 text-brand-indigo' : 'border-blue-500/30 text-blue-400'}`}>
-                                {item.type}
+                            <span className={`text-xs px-2 py-1 rounded-full border ${itemData.type === 'Certificate' ? 'border-brand-indigo/30 text-brand-indigo' : 'border-blue-500/30 text-blue-400'}`}>
+                                {itemData.type}
                             </span>
 
-                            {item.hours && (
+                            {itemData.hours && (
                                 <span className="flex items-center gap-1 text-text-secondary text-xs">
                                     <FaClock className="text-brand-indigo" />
-                                    {item.hours}
+                                    {itemData.hours}
                                 </span>
                             )}
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 }

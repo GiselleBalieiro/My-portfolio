@@ -1,6 +1,22 @@
 import { useState } from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import ImageModal from "./ImageModal";
+import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 }
+};
 
 export default function Projects() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -83,12 +99,17 @@ export default function Projects() {
   };
 
   return (
-    <div className="mt-6 mb-6">
-      <div className="mb-6">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="mt-6 mb-6"
+    >
+      <motion.div variants={item} className="mb-6">
         <h1 className="text-text-primary text-3xl">My projects</h1>
         <span className="text-text-secondary text-[14px]">Projects showcasing my expertise in full-stack development.</span>
-      </div>
-      <div className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
+      </motion.div>
+      <motion.div variants={item} className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="flex flex-col justify-between">
             <div>
@@ -139,9 +160,9 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
+      <motion.div variants={item} className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="flex flex-col justify-between">
             <div>
@@ -189,9 +210,9 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
+      <motion.div variants={item} className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="flex flex-col justify-between">
             <div>
@@ -239,7 +260,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <ImageModal
         isOpen={isModalOpen}
@@ -270,7 +291,7 @@ export default function Projects() {
         onPrev={prevProductImage}
         onSelectImage={setCurrentProductImage}
       />
-    </div>
+    </motion.div>
 
   );
 }
