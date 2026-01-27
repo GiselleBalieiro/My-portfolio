@@ -5,6 +5,8 @@ import Tab from './component/Tab';
 import Experience from './component/Experience';
 import Projects from './component/Projects';
 
+import Certificates from './component/Certificates';
+
 function App() {
   const [isDark, setIsDark] = useState(true);
   const [activeTab, setActiveTab] = useState('Home');
@@ -29,7 +31,10 @@ function App() {
             ) : activeTab === 'Experience' ? (
               <Experience />
             ) : activeTab === 'Projects' ? (
-              <Projects /> ) : null}
+              <Projects />
+            ) : activeTab === 'Certificates' ? (
+              <Certificates />
+            ) : null}
           </div>
         </div>
       </div>
