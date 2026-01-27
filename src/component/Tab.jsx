@@ -4,8 +4,8 @@ export default function Tab({ activeTab, setActiveTab }) {
       <ul className="flex flex-row gap-6 min-w-max lg:min-w-0">
         <li
           className={`${activeTab === 'Home'
-              ? 'text-[#8B5CF6] border-b-1 border-[#8B5CF6]'
-              : 'hover:text-[#4B5563]'
+            ? 'text-brand-indigo border-b-1 border-brand-indigo'
+            : 'hover:text-text-secondary text-text-secondary'
             }`}
           onClick={() => setActiveTab('Home')}
         >
@@ -13,8 +13,8 @@ export default function Tab({ activeTab, setActiveTab }) {
         </li>
         <li
           className={`${activeTab === 'Experience'
-              ? 'text-[#8B5CF6] border-b-1 border-[#8B5CF6] '
-              : 'hover:text-[#4B5563]'
+            ? 'text-brand-indigo border-b-1 border-brand-indigo '
+            : 'hover:text-text-secondary text-text-secondary'
             }`}
           onClick={() => setActiveTab('Experience')}
         >
@@ -22,8 +22,8 @@ export default function Tab({ activeTab, setActiveTab }) {
         </li>
         <li
           className={`${activeTab === 'Projects'
-              ? 'text-[#8B5CF6] border-b-1 border-[#8B5CF6] hover:text-[#4B5563]'
-              : 'hover:text-[#4B5563]'
+            ? 'text-brand-indigo border-b-1 border-brand-indigo hover:text-text-secondary'
+            : 'hover:text-text-secondary text-text-secondary'
             }`}
           onClick={() => setActiveTab('Projects')}
         >
@@ -31,8 +31,8 @@ export default function Tab({ activeTab, setActiveTab }) {
         </li>
         <li
           className={`${activeTab === 'Certificates'
-              ? 'text-[#8B5CF6] border-b-1 border-[#8B5CF6] hover:text-[#4B5563]'
-              : 'hover:text-[#4B5563]'
+            ? 'text-brand-indigo border-b-1 border-brand-indigo hover:text-text-secondary'
+            : 'hover:text-text-secondary text-text-secondary'
             }`}
           onClick={() => setActiveTab('Certificates')}
         >

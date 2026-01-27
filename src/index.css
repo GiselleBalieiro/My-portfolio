@@ -17,6 +17,9 @@
   /* Cores de Brand e Badges */
   --color-brand-indigo: #6366f1;
   --color-brand-blue: #3b82f6;
+  
+  /* Bordas */
+  --color-border-primary: var(--border-p);
 }
 
 @layer base {

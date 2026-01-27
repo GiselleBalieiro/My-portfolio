@@ -85,37 +85,37 @@ export default function Projects() {
   return (
     <div className="mt-6 mb-6">
       <div className="mb-6">
-        <h1 className="text-[#E5E7EB] text-3xl">My projects</h1>
-        <span className="text-[#CBD5E1] text-[14px]">Projects showcasing my expertise in full-stack development.</span>
+        <h1 className="text-text-primary text-3xl">My projects</h1>
+        <span className="text-text-secondary text-[14px]">Projects showcasing my expertise in full-stack development.</span>
       </div>
-      <div className="rounded-xl shadow border border-[#1F2937] p-6 mt-10">
+      <div className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="flex flex-col justify-between">
             <div>
-              <h1 className="text-[#E5E7EB] text-[20px]">AgenT - IA para WhatsApp</h1>
-              <p className="text-[#CBD5E1] mt-3 text-sm">
+              <h1 className="text-text-primary text-[20px]">AgenT - IA para WhatsApp</h1>
+              <p className="text-text-secondary mt-3 text-sm">
                 Projeto para criação e gerenciamento de agentes de IA personalizados, onde cada agente possui identidade própria, dados de treinamento e integração com o WhatsApp.
               </p>
               <div className="mt-6 mb-6">
                 <div className="flex flex-row gap-3 mt-2 flex-wrap">
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">React</button>
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">Node</button>
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">MySQL</button>
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">MongoDB Atlas</button>
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">Tailwind</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">React</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">Node</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">MySQL</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">MongoDB Atlas</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">Tailwind</button>
                 </div>
               </div>
             </div>
             <div className="flex flex-row gap-6">
-              <a href="https://github.com/GiselleBalieiro/AgenT" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-[#E5E7EB] transition-colors"><FaGithub /> Front</a>
-              <a href="https://github.com/GiselleBalieiro/ia-rag-api" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-[#E5E7EB] transition-colors"><FaGithub /> Back</a>
-              <a href="https://agent-gules-alpha.vercel.app/" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-[#E5E7EB] transition-colors"><FaExternalLinkAlt /> Demo</a>
+              <a href="https://github.com/GiselleBalieiro/AgenT" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-text-primary transition-colors text-text-secondary"><FaGithub /> Front</a>
+              <a href="https://github.com/GiselleBalieiro/ia-rag-api" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-text-primary transition-colors text-text-secondary"><FaGithub /> Back</a>
+              <a href="https://agent-gules-alpha.vercel.app/" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-text-primary transition-colors text-text-secondary"><FaExternalLinkAlt /> Demo</a>
             </div>
           </div>
 
           <div className="relative group">
             <div
-              className="relative overflow-hidden rounded-lg bg-[#111827] aspect-video cursor-pointer hover:opacity-90 transition-opacity"
+              className="relative overflow-hidden rounded-lg bg-bg-secondary aspect-video cursor-pointer hover:opacity-90 transition-opacity"
               onClick={() => openModal(currentImage)}
             >
               <img
@@ -130,11 +130,10 @@ export default function Projects() {
                 <button
                   key={index}
                   onClick={() => setCurrentImage(index)}
-                  className={`w-2 h-2 rounded-full transition-all cursor-pointer ${
-                    index === currentImage
-                      ? 'bg-[#E5E7EB] w-6'
-                      : 'bg-[#4B5563] hover:bg-[#6B7280]'
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all cursor-pointer ${index === currentImage
+                    ? 'bg-text-primary w-6'
+                    : 'bg-text-secondary hover:bg-gray-500'
+                    }`}
                 />
               ))}
             </div>
@@ -142,25 +141,25 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="rounded-xl shadow border border-[#1F2937] p-6 mt-10">
+      <div className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="flex flex-col justify-between">
             <div>
-              <h1 className="text-[#E5E7EB] text-[20px]">Expense Converter</h1>
-              <p className="text-[#CBD5E1] mt-3 text-sm">
+              <h1 className="text-text-primary text-[20px]">Expense Converter</h1>
+              <p className="text-text-secondary mt-3 text-sm">
                 Projeto desenvolvido em React com foco no controle de despesas internacionais, permitindo o registro de gastos e a conversão de valores entre moedas utilizando taxas de câmbio atualizadas.
               </p>
               <div className="mt-6 mb-6">
                 <div className="flex flex-row gap-3 mt-2 flex-wrap">
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">React</button>
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">JavaScript</button>
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">API Exchange Rate</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">React</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">JavaScript</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">API Exchange Rate</button>
                 </div>
               </div>
             </div>
             <div className="flex flex-row gap-6">
-              <a href="https://github.com/GiselleBalieiro/expense-converter" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-[#E5E7EB] transition-colors"><FaGithub /> Front</a>
-              <a href="https://expense-converter-three.vercel.app/" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-[#E5E7EB] transition-colors"><FaExternalLinkAlt /> Demo</a>
+              <a href="https://github.com/GiselleBalieiro/expense-converter" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-text-primary transition-colors text-text-secondary"><FaGithub /> Front</a>
+              <a href="https://expense-converter-three.vercel.app/" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-text-primary transition-colors text-text-secondary"><FaExternalLinkAlt /> Demo</a>
             </div>
           </div>
 
@@ -181,11 +180,10 @@ export default function Projects() {
                 <button
                   key={index}
                   onClick={() => setCurrentExpenseImage(index)}
-                  className={`w-2 h-2 rounded-full transition-all cursor-pointer ${
-                    index === currentExpenseImage
-                      ? 'bg-[#E5E7EB] w-6'
-                      : 'bg-[#4B5563] hover:bg-[#6B7280]'
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all cursor-pointer ${index === currentExpenseImage
+                    ? 'bg-text-primary w-6'
+                    : 'bg-text-secondary hover:bg-gray-500'
+                    }`}
                 />
               ))}
             </div>
@@ -193,31 +191,31 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="rounded-xl shadow border border-[#1F2937] p-6 mt-10">
+      <div className="card-project p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full mt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="flex flex-col justify-between">
             <div>
-              <h1 className="text-[#E5E7EB] text-[20px]">Product Registration</h1>
-              <p className="text-[#CBD5E1] mt-3 text-sm">
+              <h1 className="text-text-primary text-[20px]">Product Registration</h1>
+              <p className="text-text-secondary mt-3 text-sm">
                 Projeto desenvolvido com foco no aprendizado e prática de React, simulando um sistema de gestão de estoque com controle e organização de produtos.
               </p>
               <div className="mt-6 mb-6">
                 <div className="flex flex-row gap-3 mt-2 flex-wrap">
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">React</button>
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">React Router</button>
-                  <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">Tailwind</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">React</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">React Router</button>
+                  <button className="p-1.5 text-[12px] bg-bg-tertiary rounded-lg text-text-primary">Tailwind</button>
                 </div>
               </div>
             </div>
             <div className="flex flex-row gap-6">
-              <a href="https://github.com/GiselleBalieiro/product-registration" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-[#E5E7EB] transition-colors"><FaGithub /> Front</a>
-              <a href="https://product-registration-psi.vercel.app/" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-[#E5E7EB] transition-colors"><FaExternalLinkAlt /> Demo</a>
+              <a href="https://github.com/GiselleBalieiro/product-registration" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-text-primary transition-colors text-text-secondary"><FaGithub /> Front</a>
+              <a href="https://product-registration-psi.vercel.app/" className="flex flex-row gap-2 justify-center items-center text-[12px] cursor-pointer hover:text-text-primary transition-colors text-text-secondary"><FaExternalLinkAlt /> Demo</a>
             </div>
           </div>
 
           <div className="relative group">
             <div
-              className="relative overflow-hidden rounded-lg bg-[#111827] aspect-video cursor-pointer hover:opacity-90 transition-opacity"
+              className="relative overflow-hidden rounded-lg bg-bg-secondary aspect-video cursor-pointer hover:opacity-90 transition-opacity"
               onClick={() => openProductModal(currentProductImage)}
             >
               <img
@@ -232,11 +230,10 @@ export default function Projects() {
                 <button
                   key={index}
                   onClick={() => setCurrentProductImage(index)}
-                  className={`w-2 h-2 rounded-full transition-all cursor-pointer ${
-                    index === currentProductImage
-                      ? 'bg-[#E5E7EB] w-6'
-                      : 'bg-[#4B5563] hover:bg-[#6B7280]'
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all cursor-pointer ${index === currentProductImage
+                    ? 'bg-text-primary w-6'
+                    : 'bg-text-secondary hover:bg-gray-500'
+                    }`}
                 />
               ))}
             </div>

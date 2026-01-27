@@ -3,14 +3,14 @@ export default function Home() {
     <div>
       <>
         <div className="mt-6 mb-6">
-          <h1 className="text-[#E5E7EB]">Hi! I'm Giselle Balieiro</h1>
+          <h1 className="text-text-primary">Hi! I'm Giselle Balieiro</h1>
         </div>
 
         <hr></hr>
 
         <div className="mt-6 mb-6">
-          <span className="text-[##CBD5E1]">About Me:  </span>
-          <ul className="text-[#9CA3AF] list-disc list-inside space-y-2">
+          <span className="text-text-secondary">About Me:  </span>
+          <ul className="text-text-secondary list-disc list-inside space-y-2">
             <li>I'm studying Software Engineering. I also take complementary courses like the ones on the Alura platform to expand my knowledge.</li>
             <li>Currently, I am working at Era as a Developer.</li>
             <li>Web developer with a solid foundation in HTML, CSS and JavaScript, currently deepening knowledge in React.</li>
@@ -20,7 +20,7 @@ export default function Home() {
         <hr></hr>
 
         <div className="mt-6 mb-6">
-          <span className="text-[##CBD5E1]">Sociais:  </span>
+          <span className="text-text-secondary">Sociais:  </span>
           <div className="flex flex-row gap-3 mt-6 flex-wrap">
             <a className="p-2 bg-[#2563EB] rounded-lg" href="https://www.linkedin.com/in/gisellebalieiro" target="_blank" rel="noopener noreferrer">Linkedin</a>
             <a className="p-2 bg-[#4B5563] rounded-lg" href="https://github.com/GiselleBalieiro" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -30,9 +30,9 @@ export default function Home() {
         <hr></hr>
 
         <div className="mt-6 mb-6">
-          <span className="text-[##CBD5E1]">Tech Stack: </span>
+          <span className="text-text-secondary">Tech Stack: </span>
           <div className="mt-6">
-            <span className="text-[##CBD5E1]">Front-end</span>
+            <span className="text-text-secondary">Front-end</span>
             <div className="flex flex-row gap-3 mt-2 flex-wrap">
               <button className="p-2 bg-[#F97316] rounded-lg">HTML</button>
               <button className="p-2 bg-[#3B82F6] rounded-lg">CSS</button>
@@ -44,14 +44,14 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-6">
-            <span className="text-[##CBD5E1]">Back-end</span>
+            <span className="text-text-secondary">Back-end</span>
             <div className="flex flex-row gap-3 mt-2 flex-wrap">
               <button className="p-2 bg-[#22C55E] rounded-lg">Node.js</button>
               <button className="p-2 bg-[#3178C6] rounded-lg">PHP</button>
             </div>
           </div>
           <div className="mt-6">
-            <span className="text-[##CBD5E1]">Data Base</span>
+            <span className="text-text-secondary">Data Base</span>
             <div className="flex flex-row gap-3 mt-2 flex-wrap">
               <button className="p-2 bg-[#38BDF8] rounded-lg">MYSQL</button>
               <button className="p-2 bg-[#3178C6] rounded-lg">SQL</button>
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-6">
-            <span className="text-[##CBD5E1]">Software Affinity</span>
+            <span className="text-text-secondary">Software Affinity</span>
             <div className="flex flex-row gap-3 mt-2 flex-wrap">
               <button className="p-2 bg-[#3B82F6] rounded-lg">VSCODE</button>
               <button className="p-2 bg-[#F97316] rounded-lg">POSTMAN</button>

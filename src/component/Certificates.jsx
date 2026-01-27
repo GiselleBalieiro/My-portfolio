@@ -163,18 +163,18 @@ export default function Certificates() {
     return (
         <div className="mt-6 mb-6 w-full">
             <div className="mb-6">
-                <h1 className="text-[#E5E7EB] text-3xl">Certificates & Courses</h1>
-                <span className="text-[#CBD5E1] text-[14px]">
+                <h1 className="text-text-primary text-3xl">Certificates & Courses</h1>
+                <span className="text-text-secondary text-[14px]">
                     My academic achievements and professional development updates.
                 </span>
             </div>
 
             <div className="mb-8 w-full">
-                <div className="p-6 rounded-xl border border-[#8B5CF6]/50 bg-[#8B5CF6]/5 w-full">
-                    <h3 className="text-[#E5E7EB] text-lg font-semibold">{education[0].title}</h3>
-                    <span className="text-[#9CA3AF] text-sm block mt-1">{education[0].issuer}</span>
-                    <span className="text-[#CBD5E1] text-sm mt-2 block">{education[0].description}</span>
-                    <span className="text-[#CBD5E1] text-sm mt-2 block">{education[0].date}</span>
+                <div className="p-6 rounded-xl border border-brand-indigo/50 bg-brand-indigo/5 w-full">
+                    <h3 className="text-text-primary text-lg font-semibold">{education[0].title}</h3>
+                    <span className="text-text-secondary text-sm block mt-1">{education[0].issuer}</span>
+                    <span className="text-text-secondary text-sm mt-2 block">{education[0].description}</span>
+                    <span className="text-text-secondary text-sm mt-2 block">{education[0].date}</span>
                 </div>
             </div>
 
@@ -182,22 +182,22 @@ export default function Certificates() {
                 {items.map((item, index) => (
                     <div
                         key={index}
-                        className="flex flex-col gap-4 p-6 rounded-xl border border-[#1F2937] bg-transparent hover:bg-[#111827] transition-colors w-full"
+                        className="flex flex-col gap-4 p-6 rounded-xl border border-border-primary bg-transparent hover:bg-bg-tertiary transition-colors w-full card-project"
                     >
                         <div className="flex justify-between items-start">
                             <div className="flex items-center gap-3">
-                                <div className="p-2 bg-[#1F2937] rounded-lg">
+                                <div className="p-2 bg-bg-tertiary rounded-lg">
                                     {item.type === "Certificate" ? (
-                                        <FaAward className="text-[#8B5CF6] text-xl" />
+                                        <FaAward className="text-brand-indigo text-xl" />
                                     ) : (
-                                        <FaBookOpen className="text-[#8B5CF6] text-xl" />
+                                        <FaBookOpen className="text-brand-indigo text-xl" />
                                     )}
                                 </div>
                                 <div>
-                                    <h2 className="text-[#E5E7EB] text-lg font-semibold">
+                                    <h2 className="text-text-primary text-lg font-semibold">
                                         {item.title}
                                     </h2>
-                                    <span className="text-[#9CA3AF] text-sm">
+                                    <span className="text-text-secondary text-sm">
                                         {item.issuer} • {item.date}
                                     </span>
                                 </div>
@@ -207,25 +207,25 @@ export default function Certificates() {
                                     href={item.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-[#9CA3AF] hover:text-[#E5E7EB] transition-colors"
+                                    className="text-text-secondary hover:text-text-primary transition-colors"
                                 >
                                     <FaExternalLinkAlt />
                                 </a>
                             )}
                         </div>
 
-                        <p className="text-[#CBD5E1] text-sm leading-relaxed">
+                        <p className="text-text-secondary text-sm leading-relaxed">
                             {item.description}
                         </p>
 
                         <div className="flex flex-wrap gap-2 mt-2 items-center justify-between w-full">
-                            <span className={`text-xs px-2 py-1 rounded-full border ${item.type === 'Certificate' ? 'border-[#8B5CF6]/30 text-[#8B5CF6]' : 'border-blue-500/30 text-blue-400'}`}>
+                            <span className={`text-xs px-2 py-1 rounded-full border ${item.type === 'Certificate' ? 'border-brand-indigo/30 text-brand-indigo' : 'border-blue-500/30 text-blue-400'}`}>
                                 {item.type}
                             </span>
 
                             {item.hours && (
-                                <span className="flex items-center gap-1 text-[#9CA3AF] text-xs">
-                                    <FaClock className="text-[#8B5CF6]" />
+                                <span className="flex items-center gap-1 text-text-secondary text-xs">
+                                    <FaClock className="text-brand-indigo" />
                                     {item.hours}
                                 </span>
                             )}

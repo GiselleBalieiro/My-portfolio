@@ -13,21 +13,21 @@ export default function Main() {
         />
         <div className="pl-4">
           <div className="flex flex-col text-base mb-4 mt-4">
-            <h2 className="text-[#E5E7EB] text-2xl">Giselle Balieiro</h2>
-            <span className="text-[#6B7280] text-sm">Software Engineering</span>
+            <h2 className="text-text-primary text-2xl">Giselle Balieiro</h2>
+            <span className="text-text-secondary text-sm">Software Engineering</span>
           </div>
-          <div className="flex flex-col text-secondary text-sm">
-            <span className="flex flex-row gap-1 text-gray-400 mt-1"><Building2 size={16} />ERA</span>
-            <span className="flex flex-row gap-1 text-gray-400 mt-1"><MapPin size={16} />Campinas - São Paulo</span>
+          <div className="flex flex-col text-text-secondary text-sm">
+            <span className="flex flex-row gap-1 text-text-secondary mt-1"><Building2 size={16} />ERA</span>
+            <span className="flex flex-row gap-1 text-text-secondary mt-1"><MapPin size={16} />Campinas - São Paulo</span>
           </div>
-          <div className="flex gap-4 text-gray-400 mt-6">
-            <a href="https://www.github.com/GiselleBalieiro" target="_blank" rel="noopener noreferrer">
+          <div className="flex gap-4 text-text-secondary mt-6">
+            <a href="https://www.github.com/GiselleBalieiro" target="_blank" rel="noopener noreferrer" className="hover:text-text-primary transition-colors">
               <FaGithub size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/gisellebalieiro" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/gisellebalieiro" target="_blank" rel="noopener noreferrer" className="hover:text-text-primary transition-colors">
               <AiFillLinkedin size={20} />
             </a>
-            <a href="mailto:gisellefbalieiro@outlook.com">
+            <a href="mailto:gisellefbalieiro@outlook.com" className="hover:text-text-primary transition-colors">
               <Mail size={20} />
             </a>
           </div>
