@@ -3,7 +3,7 @@ export default function Home() {
     <div>
       <>
         <div className="mt-6 mb-6">
-          <h1 className="text-[#E5E7EB]">Hi! I'm Giselle Balieiro</h1>   
+          <h1 className="text-[#E5E7EB]">Hi! I'm Giselle Balieiro</h1>
         </div>
 
         <hr></hr>
@@ -16,12 +16,12 @@ export default function Home() {
             <li>Web developer with a solid foundation in HTML, CSS and JavaScript, currently deepening knowledge in React.</li>
           </ul>
         </div>
-      
+
         <hr></hr>
 
         <div className="mt-6 mb-6">
           <span className="text-[##CBD5E1]">Sociais:  </span>
-          <div className="flex flex-row gap-3 mt-6 ">
+          <div className="flex flex-row gap-3 mt-6 flex-wrap">
             <a className="p-2 bg-[#2563EB] rounded-lg" href="https://www.linkedin.com/in/gisellebalieiro" target="_blank" rel="noopener noreferrer">Linkedin</a>
             <a className="p-2 bg-[#4B5563] rounded-lg" href="https://github.com/GiselleBalieiro" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
@@ -33,7 +33,7 @@ export default function Home() {
           <span className="text-[##CBD5E1]">Tech Stack: </span>
           <div className="mt-6">
             <span className="text-[##CBD5E1]">Front-end</span>
-            <div className="flex flex-row gap-3 mt-2 ">
+            <div className="flex flex-row gap-3 mt-2 flex-wrap">
               <button className="p-2 bg-[#F97316] rounded-lg">HTML</button>
               <button className="p-2 bg-[#3B82F6] rounded-lg">CSS</button>
               <button className="p-2 bg-[#F59E0B] rounded-lg">JavaScript</button>
@@ -45,14 +45,14 @@ export default function Home() {
           </div>
           <div className="mt-6">
             <span className="text-[##CBD5E1]">Back-end</span>
-            <div className="flex flex-row gap-3 mt-2 ">
+            <div className="flex flex-row gap-3 mt-2 flex-wrap">
               <button className="p-2 bg-[#22C55E] rounded-lg">Node.js</button>
               <button className="p-2 bg-[#3178C6] rounded-lg">PHP</button>
             </div>
           </div>
           <div className="mt-6">
             <span className="text-[##CBD5E1]">Data Base</span>
-            <div className="flex flex-row gap-3 mt-2 ">
+            <div className="flex flex-row gap-3 mt-2 flex-wrap">
               <button className="p-2 bg-[#38BDF8] rounded-lg">MYSQL</button>
               <button className="p-2 bg-[#3178C6] rounded-lg">SQL</button>
               <button className="p-2 bg-[#2563EB] rounded-lg">SQLITE</button>
@@ -62,7 +62,7 @@ export default function Home() {
           </div>
           <div className="mt-6">
             <span className="text-[##CBD5E1]">Software Affinity</span>
-            <div className="flex flex-row gap-3 mt-2 ">
+            <div className="flex flex-row gap-3 mt-2 flex-wrap">
               <button className="p-2 bg-[#3B82F6] rounded-lg">VSCODE</button>
               <button className="p-2 bg-[#F97316] rounded-lg">POSTMAN</button>
               <button className="p-2 bg-[#8B5CF6] rounded-lg">FIGMA</button>

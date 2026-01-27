@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Main() {
   return (
-    <div className="flex pt-20">
+    <div className="flex pt-6 lg:pt-20 justify-center lg:justify-start">
       <div className="flex flex-col">
         <img
           src="./images/my-icon-circle.png"

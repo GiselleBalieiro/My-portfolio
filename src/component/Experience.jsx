@@ -33,7 +33,7 @@ export default function Experience() {
                 Atuo tanto no front-end quanto no back-end, contribuo para interfaces funcionais e uma melhor experiência do usuário com responsividade, consumo de APIs para garantir a comunicação entre diferentes sistemas e serviços e análise de Data Base, identificando e corrigindo inconsistências que possam comprometer a integridade dos dados.
               </p>
               <div className="mt-6">
-                <div className="flex flex-row gap-3 mt-2 ">
+                <div className="flex flex-row gap-3 mt-2 flex-wrap">
                   <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">PHP</button>
                   <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">JavaScript</button>
                   <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">jQuery</button>
@@ -75,7 +75,7 @@ export default function Experience() {
                 problemas.
               </p>
               <div className="mt-6">
-                <div className="flex flex-row gap-3 mt-2 ">
+                <div className="flex flex-row gap-3 mt-2 flex-wrap">
                   <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">SSH</button>
                   <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">SFTP</button>
                   <button className="p-1.5 text-[12px] bg-[#111827] rounded-lg">Docker</button>

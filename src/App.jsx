@@ -21,9 +21,9 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-row justify-center gap-20 p-10">
+      <div className="flex flex-col lg:flex-row justify-center gap-10 lg:gap-20 p-4 lg:p-10">
         <Main />
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full lg:w-auto">
           <Tab activeTab={activeTab} setActiveTab={setActiveTab} />
           <div className="rounded-xl shadow border border-[#1F2937] p-6 w-full h-full flex flex-col mt-10 max-w-[800px] overflow-auto">
             {activeTab === 'Home' ? (
