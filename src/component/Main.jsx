@@ -10,7 +10,7 @@ export default function Main() {
 
         <div className="flex flex-row items-center lg:flex-col lg:items-start w-full lg:w-auto gap-4 lg:gap-0">
           <img
-            src="./images/my-icon-circle.png"
+            src="./images/my-icon-circle-opt.png"
             alt=""
             className="rounded-full w-20 h-20 lg:w-62 lg:h-auto"
           />
