@@ -8,6 +8,7 @@ import Projects from './component/Projects';
 
 import ThemeToggle from './component/ThemeToggle';
 import Certificates from './component/Certificates';
+import LiveChat from './component/LiveChat';
 
 function App() {
   const [activeTab, setActiveTab] = useState('Home');
@@ -42,6 +43,7 @@ function App() {
           </div>
         </div>
       </div>
+      <LiveChat />
     </>
   );
 }
