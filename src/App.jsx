@@ -18,7 +18,7 @@ function App() {
         <Main />
         <div className="flex flex-col w-full lg:w-auto">
           <Tab activeTab={activeTab} setActiveTab={setActiveTab} />
-          <div className="rounded-xl shadow border border-border-primary p-6 w-full h-full flex flex-col max-w-[800px] overflow-auto">
+          <div className="rounded-xl shadow border border-border-primary p-6 w-full h-full flex flex-col lg:mt-10 max-w-[800px] overflow-auto">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeTab}
