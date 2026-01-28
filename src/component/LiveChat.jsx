@@ -57,7 +57,7 @@ const LiveChat = () => {
 
     return (
         <>
-            <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+            <div className="z-50 flex flex-col items-end pointer-events-none fixed inset-0 justify-end p-6">
                 <AnimatePresence>
                     {isOpen && (
                         <motion.div
@@ -65,7 +65,7 @@ const LiveChat = () => {
                             animate={{ opacity: 1, y: 0, scale: 1 }}
                             exit={{ opacity: 0, y: 20, scale: 0.95 }}
                             transition={{ duration: 0.2 }}
-                            className="mb-4 w-80 sm:w-96 h-[500px] bg-bg-secondary border border-border-primary rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+                            className="pointer-events-auto mb-16 w-80 sm:w-96 h-[500px] bg-bg-secondary border border-border-primary rounded-2xl shadow-2xl flex flex-col overflow-hidden"
                         >
                             <div className="bg-bg-tertiary p-4 flex justify-between items-center border-b border-border-primary">
                                 <span className="font-semibold text-primary">GB Assistant - AI </span>
@@ -131,7 +131,7 @@ const LiveChat = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setIsOpen(!isOpen)}
-                    className="bg-brand-indigo text-white p-4 rounded-full shadow-lg hover:bg-opacity-90 transition-all flex items-center justify-center"
+                    className="pointer-events-auto fixed bottom-4 right-4 z-50 w-[60px] h-[60px] rounded-4xl shadow-lg backdrop-blur-md bg-[--bg-primary]/80 border border-border-primary text-brand-indigo hover:bg-opacity-90 transition-all flex items-center justify-center"
                 >
                     {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
                 </motion.button>
