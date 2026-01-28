@@ -33,7 +33,7 @@ export default function Home() {
         <ul className="text-text-secondary list-disc list-inside space-y-2">
           <li>I'm studying Software Engineering. I also take complementary courses like the ones on the Alura platform to expand my knowledge.</li>
           <li>Currently, I am working at Era as a Developer.</li>
-          <li>Web developer with a solid foundation in HTML, CSS and JavaScript, currently deepening knowledge in React.</li>
+          <li>Web developer with experience in front-end and back-end development, working with React, Node.js, PHP and relational databases.</li>
         </ul>
       </motion.div>
 
@@ -73,21 +73,21 @@ export default function Home() {
         <div className="mt-6">
           <span className="text-text-secondary">Data Base</span>
           <div className="flex flex-row gap-3 mt-2 flex-wrap">
-            <button className="p-2 bg-[#38BDF8] rounded-lg text-white">MYSQL</button>
+            <button className="p-2 bg-[#38BDF8] rounded-lg text-white">MySQL</button>
             <button className="p-2 bg-[#3178C6] rounded-lg text-white">SQL</button>
-            <button className="p-2 bg-[#2563EB] rounded-lg text-white">SQLITE</button>
-            <button className="p-2 bg-[#22C55E] rounded-lg text-white">MONGODB ATLAS</button>
-            <button className="p-2 bg-[#8B5CF6] rounded-lg text-white">POSTGRESQL</button>
+            <button className="p-2 bg-[#2563EB] rounded-lg text-white">SQLite</button>
+            <button className="p-2 bg-[#22C55E] rounded-lg text-white">MongoDB Atlas</button>
+            <button className="p-2 bg-[#8B5CF6] rounded-lg text-white">PostgreSQL</button>
           </div>
         </div>
         <div className="mt-6">
           <span className="text-text-secondary">Software Affinity</span>
           <div className="flex flex-row gap-3 mt-2 flex-wrap">
-            <button className="p-2 bg-[#3B82F6] rounded-lg text-white">VSCODE</button>
-            <button className="p-2 bg-[#F97316] rounded-lg text-white">POSTMAN</button>
-            <button className="p-2 bg-[#8B5CF6] rounded-lg text-white">FIGMA</button>
-            <button className="p-2 bg-[#3178C6] rounded-lg text-white">HEIDISQL</button>
-            <button className="p-2 bg-[#3B82F6] rounded-lg text-white">DBEAVER</button>
+            <button className="p-2 bg-[#3B82F6] rounded-lg text-white">VSCode</button>
+            <button className="p-2 bg-[#F97316] rounded-lg text-white">Postman</button>
+            <button className="p-2 bg-[#8B5CF6] rounded-lg text-white">Figma</button>
+            <button className="p-2 bg-[#3178C6] rounded-lg text-white">HeidiSQL</button>
+            <button className="p-2 bg-[#3B82F6] rounded-lg text-white">DBeaver</button>
           </div>
         </div>
       </motion.div>
