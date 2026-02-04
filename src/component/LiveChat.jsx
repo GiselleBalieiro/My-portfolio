@@ -29,7 +29,11 @@ const LiveChat = () => {
         setLoading(true);
 
         try {
-            const res = await fetch("/api/perguntar", {
+            const apiUrl = import.meta.env.DEV
+                ? "/api/perguntar"
+                : "https://ia-rag-api-production.up.railway.app/perguntar";
+
+            const res = await fetch(apiUrl, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
