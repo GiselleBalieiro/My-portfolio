@@ -148,7 +148,7 @@ const LiveChat = () => {
                                 </linearGradient>
                             </defs>
 
-                            <circle cx="50" cy="50" r="35" stroke="url(#g)" strokeWidth="3" fill="none" />
+
                             <text
                                 x="50"
                                 y="63"
