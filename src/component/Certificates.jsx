@@ -37,7 +37,8 @@ export default function Certificates() {
             date: "11 de novembro de 2025",
             description: "Curso focado em PDO, segurança contra SQL Injection, transações e boas práticas com banco de dados.",
             link: "https://cursos.alura.com.br/certificate/29c99265-37a4-4301-b23e-f4f81fc9ae73?lang=pt_BR",
-            hours: "10h"
+            hours: "10h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -46,7 +47,8 @@ export default function Certificates() {
             date: "10 de agosto de 2025",
             description: "Introdução à computação em nuvem com AWS, criando instâncias e explorando segurança e serviços.",
             link: "https://cursos.alura.com.br/certificate/7c6f2498-db74-4c73-825b-bfed03dfd625?lang=pt_BR",
-            hours: "8h"
+            hours: "8h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -55,7 +57,8 @@ export default function Certificates() {
             date: "20 de maio de 2025",
             description: "Manipulação de DOM, eventos e animações com a biblioteca jQuery.",
             link: "https://cursos.alura.com.br/certificate/3ea64bb3-bd9d-4505-9f43-6be229826757?lang=pt_BR",
-            hours: "12h"
+            hours: "12h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -64,7 +67,8 @@ export default function Certificates() {
             date: "15 de maio de 2025",
             description: "Fundamentos de MySQL, desde a estrutura do banco até consultas e manipulação de dados.",
             link: "https://cursos.alura.com.br/certificate/9d8ea112-ee54-4eb2-b853-344c30ef3cc0?lang=pt_BR",
-            hours: "8h"
+            hours: "8h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -73,7 +77,8 @@ export default function Certificates() {
             date: "16 de março de 2025",
             description: "Desenvolvimento de uma aplicação web completa integrando PHP com banco de dados MySQL.",
             link: "https://cursos.alura.com.br/certificate/6e5f4204-a713-4de0-99c7-3100c0ae7865?lang=pt_BR",
-            hours: "10h"
+            hours: "10h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -82,7 +87,8 @@ export default function Certificates() {
             date: "12 de março de 2025",
             description: "Aprendizado prático de SQL com SQLite, cobrindo criação de tabelas, consultas e manipulação de dados.",
             link: "https://cursos.alura.com.br/certificate/b5af9240-3a4a-47ea-9472-6b133fef2484?lang=pt_BR",
-            hours: "8h"
+            hours: "8h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -91,7 +97,8 @@ export default function Certificates() {
             date: "Fevereiro de 2025",
             description: "Desenvolvimento do projeto FSW Donalds: simulação de totem de pedidos com React, TypeScript, PostgreSQL, Prisma e Tailwind.",
             link: "#",
-            hours: "Intensivo"
+            hours: "Intensivo",
+            logo: "./images/fsc-logo.png"
         },
         {
             type: "Certificate",
@@ -100,7 +107,8 @@ export default function Certificates() {
             date: "28 de janeiro de 2025",
             description: "Exploração do framework Next.js, incluindo rotas dinâmicas, build, SEO e deploy.",
             link: "https://cursos.alura.com.br/certificate/1b81fe3c-e34c-441f-a16e-0dede3207c5b?lang=pt_BR",
-            hours: "8h"
+            hours: "8h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -109,7 +117,8 @@ export default function Certificates() {
             date: "02 de janeiro de 2025",
             description: "Aprofundamento em PHP, focando em organização de código e manipulação de arquivos.",
             link: "https://cursos.alura.com.br/certificate/6afabc74-3830-4e21-8836-d71405a13615?lang=pt_BR",
-            hours: "8h"
+            hours: "8h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -118,7 +127,8 @@ export default function Certificates() {
             date: "02 de janeiro de 2025",
             description: "Introdução à linguagem PHP, conceitos básicos de arrays, loops e lógica de programação.",
             link: "https://cursos.alura.com.br/certificate/db098b52-3cfb-4b5d-b5ef-ed5dd0fa9fc2?lang=pt_BR",
-            hours: "8h"
+            hours: "8h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -127,7 +137,8 @@ export default function Certificates() {
             date: "28 de dezembro de 2024",
             description: "Desenvolvimento front-end moderno com React, componentes, props e estado.",
             link: "https://cursos.alura.com.br/certificate/e27c6743-6b92-47b9-8f76-e48dac6ef693?lang=pt_BR",
-            hours: "14h"
+            hours: "14h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -136,7 +147,8 @@ export default function Certificates() {
             date: "10 de dezembro de 2024",
             description: "Controle de versão completo com Git e GitHub, desde comandos básicos até trabalho em equipe.",
             link: "https://cursos.alura.com.br/certificate/ad8652cb-d04c-4cf8-a16e-0dede3207c5b?lang=pt_BR",
-            hours: "8h"
+            hours: "8h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -145,7 +157,8 @@ export default function Certificates() {
             date: "07 de dezembro de 2024",
             description: "Introdução à lógica de programação utilizando JavaScript e Google Gemini, com foco em desenvolvimento back-end e inteligência artificial.",
             link: "https://cursos.alura.com.br/immersion/certificate/3d01ce56-af92-4bfa-8946-2a0c8b333d93",
-            hours: "4h"
+            hours: "4h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -163,7 +176,8 @@ export default function Certificates() {
             date: "24 de julho de 2024",
             description: "Mergulho intenso no desenvolvimento Front-End, criando projetos práticos com HTML, CSS e JavaScript.",
             link: "https://cursos.alura.com.br/immersion/certificate/ddea1e65-99d7-4785-bffe-3de8df524a07?lang",
-            hours: "5h"
+            hours: "5h",
+            logo: "./images/alura-logo.png"
         },
         {
             type: "Certificate",
@@ -172,7 +186,8 @@ export default function Certificates() {
             date: "28 de novembro de 2023",
             description: "Introdução à lógica de programação e criação de primeiros projetos com JavaScript.",
             link: "https://cursos.alura.com.br/immersion/certificate/6b0f87da-2040-41ec-b198-37be6c6b5ec5?lang",
-            hours: "4h"
+            hours: "4h",
+            logo: "./images/alura-logo.png"
         }
     ];
 
@@ -208,13 +223,23 @@ export default function Certificates() {
                     >
                         <div className="flex justify-between items-start">
                             <div className="flex items-center gap-3">
-                                <div className="p-2 bg-bg-tertiary rounded-lg">
-                                    {itemData.type === "Certificate" ? (
-                                        <FaAward className="text-brand-indigo text-xl" />
-                                    ) : (
-                                        <FaBookOpen className="text-brand-indigo text-xl" />
-                                    )}
-                                </div>
+                                {itemData.logo ? (
+                                    <div className="p-2 bg-bg-tertiary rounded-lg shrink-0 w-16 h-16 flex items-center justify-center">
+                                        <img
+                                            src={itemData.logo}
+                                            alt={itemData.issuer}
+                                            className="w-full h-full object-contain"
+                                        />
+                                    </div>
+                                ) : (
+                                    <div className="p-2 w-16 h-16 flex items-center justify-center bg-bg-tertiary rounded-lg">
+                                        {itemData.type === "Certificate" ? (
+                                            <FaAward className="text-brand-indigo text-xl" />
+                                        ) : (
+                                            <FaBookOpen className="text-brand-indigo text-xl" />
+                                        )}
+                                    </div>
+                                )}
                                 <div>
                                     <h2 className="text-text-primary text-lg font-semibold">
                                         {itemData.title}

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { MessageCircle, X, Send, Loader2 } from "lucide-react";
+import { MessageCircle, X, ArrowUp, Loader2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const LiveChat = () => {
@@ -75,7 +75,7 @@ const LiveChat = () => {
                                 <span className="font-semibold text-primary">GB Assistant - AI </span>
                                 <button
                                     onClick={() => setIsOpen(false)}
-                                    className="text-secondary hover:text-primary transition-colors"
+                                    className="cursor-pointer text-secondary hover:text-primary transition-colors"
                                 >
                                     <X size={20} />
                                 </button>
@@ -122,9 +122,9 @@ const LiveChat = () => {
                                 <button
                                     type="submit"
                                     disabled={loading || !input.trim()}
-                                    className="bg-brand-indigo text-white p-2 rounded-xl hover:bg-opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="cursor-pointer bg-brand-indigo text-white p-2 rounded-xl hover:bg-opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
-                                    <Send size={18} />
+                                    <ArrowUp size={18} />
                                 </button>
                             </form>
                         </motion.div>
@@ -135,9 +135,33 @@ const LiveChat = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setIsOpen(!isOpen)}
-                    className="pointer-events-auto fixed bottom-4 right-4 z-50 w-[60px] h-[60px] rounded-4xl shadow-lg backdrop-blur-md bg-[--bg-primary]/80 border border-border-primary text-brand-indigo hover:bg-opacity-90 transition-all flex items-center justify-center"
+                    className="cursor-pointer pointer-events-auto fixed bottom-4 right-4 z-50 w-[60px] h-[60px] rounded-4xl shadow-lg backdrop-blur-md bg-[--bg-primary]/80 border border-border-primary text-brand-indigo hover:bg-opacity-90 transition-all flex items-center justify-center"
                 >
-                    {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
+                    {isOpen ? (
+                        <X size={24} />
+                    ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-12 h-12">
+                            <defs>
+                                <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                                    <stop offset="0%" stopColor="#00c6ff" />
+                                    <stop offset="100%" stopColor="#7a5cff" />
+                                </linearGradient>
+                            </defs>
+
+                            <circle cx="50" cy="50" r="35" stroke="url(#g)" strokeWidth="3" fill="none" />
+                            <text
+                                x="50"
+                                y="63"
+                                fontSize="36"
+                                fontFamily="Segoe UI,Arial"
+                                fontWeight="bold"
+                                textAnchor="middle"
+                                fill="url(#g)"
+                            >
+                                GB
+                            </text>
+                        </svg>
+                    )}
                 </motion.button>
             </div>
         </>
