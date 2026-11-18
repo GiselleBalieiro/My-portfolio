@@ -168,23 +168,16 @@ export const defaultContent = {
         {
           "category": "Back-end",
           "categoryOrder": 2,
-          "name": "Laravel",
-          "color": "#FF2D20",
-          "order": 3
-        },
-        {
-          "category": "Back-end",
-          "categoryOrder": 2,
           "name": "Zod",
           "color": "#3E67B1",
-          "order": 4
+          "order": 3
         },
         {
           "category": "Back-end",
           "categoryOrder": 2,
           "name": "JWT",
           "color": "#8B5CF6",
-          "order": 5
+          "order": 4
         }
       ]
     },
