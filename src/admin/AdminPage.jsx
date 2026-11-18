@@ -6,6 +6,7 @@ import { useContent } from '@/content/content-context';
 import ThemeToggle from '@/component/ThemeToggle';
 import { CollectionPanel } from './CollectionPanel';
 import { ProfilePanel } from './ProfilePanel';
+import { ImportPanel } from './ImportPanel';
 import { collections } from './definitions';
 
 const tabs = [
@@ -14,6 +15,7 @@ const tabs = [
   { id: 'experiences', label: collections.experiences.label },
   { id: 'projects', label: collections.projects.label },
   { id: 'certificates', label: collections.certificates.label },
+  { id: 'import', label: 'Importar conteúdo' },
 ];
 
 export function AdminPage() {
@@ -70,6 +72,8 @@ export function AdminPage() {
         <main className="rounded-xl border border-border-primary p-5 lg:p-8">
           {active === 'profile' ? (
             <ProfilePanel onChanged={refresh} />
+          ) : active === 'import' ? (
+            <ImportPanel onChanged={refresh} />
           ) : (
             <CollectionPanel key={active} definition={collections[active]} onChanged={refresh} />
           )}
