@@ -4,9 +4,9 @@
 export const defaultContent = {
   "profile": {
     "about": [
-      "I'm studying Software Engineering. I also take complementary courses like the ones on the Alura platform to expand my knowledge.",
-      "Currently, I am working at Era as a Developer.",
-      "Web developer with experience in front-end and back-end development, working with React, Node.js, PHP and relational databases."
+      "Full Stack Developer at ERA since March 2025, and a Software Engineering student. I keep learning through Alura and Rocketseat courses.",
+      "I build complete products end to end: database design, APIs, background jobs, UI and deploy, mostly in TypeScript with Angular or React/Next.js on the front and NestJS or Express on the back.",
+      "I also integrate LLMs into real products: RAG pipelines with embeddings, WhatsApp AI agents with lead qualification, and MCP servers that let AI assistants work inside an app."
     ],
     "avatarUrl": "/images/my-icon-circle-opt.png",
     "company": "ERA",
@@ -30,60 +30,114 @@ export const defaultContent = {
         "color": "#4B5563"
       }
     ],
-    "title": "Software Engineering"
+    "title": "Full Stack Developer"
   },
   "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        {
+          "category": "Languages",
+          "categoryOrder": 0,
+          "name": "TypeScript",
+          "color": "#3178C6",
+          "order": 0
+        },
+        {
+          "category": "Languages",
+          "categoryOrder": 0,
+          "name": "JavaScript",
+          "color": "#F59E0B",
+          "order": 1
+        },
+        {
+          "category": "Languages",
+          "categoryOrder": 0,
+          "name": "PHP",
+          "color": "#777BB4",
+          "order": 2
+        },
+        {
+          "category": "Languages",
+          "categoryOrder": 0,
+          "name": "SQL",
+          "color": "#336791",
+          "order": 3
+        },
+        {
+          "category": "Languages",
+          "categoryOrder": 0,
+          "name": "HTML",
+          "color": "#F97316",
+          "order": 4
+        },
+        {
+          "category": "Languages",
+          "categoryOrder": 0,
+          "name": "CSS",
+          "color": "#3B82F6",
+          "order": 5
+        }
+      ]
+    },
     {
       "category": "Front-end",
       "items": [
         {
           "category": "Front-end",
-          "categoryOrder": 0,
-          "name": "HTML",
-          "color": "#F97316",
+          "categoryOrder": 1,
+          "name": "Angular",
+          "color": "#DD0031",
           "order": 0
         },
         {
           "category": "Front-end",
-          "categoryOrder": 0,
-          "name": "CSS",
-          "color": "#3B82F6",
+          "categoryOrder": 1,
+          "name": "React",
+          "color": "#60A5FA",
           "order": 1
         },
         {
           "category": "Front-end",
-          "categoryOrder": 0,
-          "name": "JavaScript",
-          "color": "#F59E0B",
+          "categoryOrder": 1,
+          "name": "Next.js",
+          "color": "#4B5563",
           "order": 2
         },
         {
           "category": "Front-end",
-          "categoryOrder": 0,
-          "name": "jQuery",
-          "color": "#3B82F6",
+          "categoryOrder": 1,
+          "name": "Vite",
+          "color": "#646CFF",
           "order": 3
         },
         {
           "category": "Front-end",
-          "categoryOrder": 0,
-          "name": "TypeScript",
-          "color": "#3178C6",
+          "categoryOrder": 1,
+          "name": "TailwindCSS",
+          "color": "#06B6D4",
           "order": 4
         },
         {
           "category": "Front-end",
-          "categoryOrder": 0,
-          "name": "React",
-          "color": "#60A5FA",
+          "categoryOrder": 1,
+          "name": "shadcn/ui",
+          "color": "#4B5563",
           "order": 5
         },
         {
           "category": "Front-end",
-          "categoryOrder": 0,
-          "name": "TailwindCSS",
-          "color": "#06B6D4",
+          "categoryOrder": 1,
+          "name": "TanStack Query",
+          "color": "#FF4154",
           "order": 6
+        },
+        {
+          "category": "Front-end",
+          "categoryOrder": 1,
+          "name": "Framer Motion",
+          "color": "#0055FF",
+          "order": 7
         }
       ]
     },
@@ -92,97 +146,193 @@ export const defaultContent = {
       "items": [
         {
           "category": "Back-end",
-          "categoryOrder": 1,
+          "categoryOrder": 2,
           "name": "Node.js",
           "color": "#22C55E",
           "order": 0
         },
         {
           "category": "Back-end",
-          "categoryOrder": 1,
-          "name": "PHP",
-          "color": "#3178C6",
+          "categoryOrder": 2,
+          "name": "NestJS",
+          "color": "#E0234E",
           "order": 1
+        },
+        {
+          "category": "Back-end",
+          "categoryOrder": 2,
+          "name": "Express",
+          "color": "#4B5563",
+          "order": 2
+        },
+        {
+          "category": "Back-end",
+          "categoryOrder": 2,
+          "name": "Laravel",
+          "color": "#FF2D20",
+          "order": 3
+        },
+        {
+          "category": "Back-end",
+          "categoryOrder": 2,
+          "name": "Zod",
+          "color": "#3E67B1",
+          "order": 4
+        },
+        {
+          "category": "Back-end",
+          "categoryOrder": 2,
+          "name": "JWT",
+          "color": "#8B5CF6",
+          "order": 5
         }
       ]
     },
     {
-      "category": "Data Base",
+      "category": "Databases",
       "items": [
         {
-          "category": "Data Base",
-          "categoryOrder": 2,
+          "category": "Databases",
+          "categoryOrder": 3,
+          "name": "PostgreSQL",
+          "color": "#4169E1",
+          "order": 0
+        },
+        {
+          "category": "Databases",
+          "categoryOrder": 3,
+          "name": "MongoDB",
+          "color": "#22C55E",
+          "order": 1
+        },
+        {
+          "category": "Databases",
+          "categoryOrder": 3,
           "name": "MySQL",
           "color": "#38BDF8",
-          "order": 0
-        },
-        {
-          "category": "Data Base",
-          "categoryOrder": 2,
-          "name": "SQL",
-          "color": "#3178C6",
-          "order": 1
-        },
-        {
-          "category": "Data Base",
-          "categoryOrder": 2,
-          "name": "SQLite",
-          "color": "#2563EB",
           "order": 2
         },
         {
-          "category": "Data Base",
-          "categoryOrder": 2,
-          "name": "MongoDB Atlas",
-          "color": "#22C55E",
+          "category": "Databases",
+          "categoryOrder": 3,
+          "name": "SQLite",
+          "color": "#2563EB",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "category": "AI & LLM",
+      "items": [
+        {
+          "category": "AI & LLM",
+          "categoryOrder": 4,
+          "name": "OpenAI",
+          "color": "#10A37F",
+          "order": 0
+        },
+        {
+          "category": "AI & LLM",
+          "categoryOrder": 4,
+          "name": "OpenRouter",
+          "color": "#6566F1",
+          "order": 1
+        },
+        {
+          "category": "AI & LLM",
+          "categoryOrder": 4,
+          "name": "RAG & Embeddings",
+          "color": "#FF6F00",
+          "order": 2
+        },
+        {
+          "category": "AI & LLM",
+          "categoryOrder": 4,
+          "name": "MCP Servers",
+          "color": "#8B5CF6",
           "order": 3
         },
         {
-          "category": "Data Base",
-          "categoryOrder": 2,
-          "name": "PostgreSQL",
-          "color": "#8B5CF6",
+          "category": "AI & LLM",
+          "categoryOrder": 4,
+          "name": "WhatsApp Bots",
+          "color": "#25D366",
           "order": 4
         }
       ]
     },
     {
-      "category": "Software Affinity",
+      "category": "DevOps & Tools",
       "items": [
         {
-          "category": "Software Affinity",
-          "categoryOrder": 3,
-          "name": "VSCode",
-          "color": "#3B82F6",
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "Docker",
+          "color": "#2496ED",
           "order": 0
         },
         {
-          "category": "Software Affinity",
-          "categoryOrder": 3,
-          "name": "Postman",
-          "color": "#F97316",
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "Vercel",
+          "color": "#4B5563",
           "order": 1
         },
         {
-          "category": "Software Affinity",
-          "categoryOrder": 3,
-          "name": "Figma",
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "Railway",
           "color": "#8B5CF6",
           "order": 2
         },
         {
-          "category": "Software Affinity",
-          "categoryOrder": 3,
-          "name": "HeidiSQL",
-          "color": "#3178C6",
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "Git",
+          "color": "#F05032",
           "order": 3
         },
         {
-          "category": "Software Affinity",
-          "categoryOrder": 3,
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "GitHub",
+          "color": "#4B5563",
+          "order": 4
+        },
+        {
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "Vitest",
+          "color": "#6E9F18",
+          "order": 5
+        },
+        {
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "Cloudinary",
+          "color": "#3448C5",
+          "order": 6
+        },
+        {
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "Postman",
+          "color": "#F97316",
+          "order": 7
+        },
+        {
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
+          "name": "Figma",
+          "color": "#8B5CF6",
+          "order": 8
+        },
+        {
+          "category": "DevOps & Tools",
+          "categoryOrder": 5,
           "name": "DBeaver",
           "color": "#3B82F6",
-          "order": 4
+          "order": 9
         }
       ]
     }
@@ -191,16 +341,18 @@ export const defaultContent = {
     {
       "company": "ERA",
       "role": "Full Stack Developer",
-      "period": "Março 2025 – Presente",
-      "description": "Atuo tanto no front-end quanto no back-end, contribuo para interfaces funcionais e uma melhor experiência do usuário com responsividade, consumo de APIs para garantir a comunicação entre diferentes sistemas e serviços e análise de Data Base, identificando e corrigindo inconsistências que possam comprometer a integridade dos dados.",
+      "period": "March 2025 – Present",
+      "description": "I work across front-end and back-end: building responsive interfaces, integrating APIs between internal systems and third-party services, and analyzing the database to find and fix inconsistencies that could compromise data integrity. I ship through feature branches and pull requests.",
       "logoUrl": "/images/image.png",
       "tags": [
-        "PHP",
+        "TypeScript",
         "JavaScript",
-        "jQuery",
-        "Node",
-        "Mysql",
         "React",
+        "Node.js",
+        "PHP",
+        "MySQL",
+        "jQuery",
+        "Docker",
         "Git",
         "GitHub"
       ],
@@ -208,9 +360,9 @@ export const defaultContent = {
     },
     {
       "company": "ERA",
-      "role": "Analista de Suporte Técnico",
-      "period": "Julho 2024 – Março 2025",
-      "description": "Configuração de servidores via SSH e containers Docker, correção de arquivos via SFTP e suporte técnico. Também atuei no monitoramento de logs, otimização de desempenho e resolução de problemas.",
+      "role": "Technical Support Analyst",
+      "period": "July 2024 – March 2025",
+      "description": "Configured servers over SSH and Docker containers, fixed files over SFTP and provided technical support. I also monitored logs, tuned performance and solved production issues.",
       "logoUrl": "/images/image.png",
       "tags": [
         "SSH",
@@ -223,13 +375,32 @@ export const defaultContent = {
   ],
   "projects": [
     {
-      "title": "AgenT - IA para WhatsApp",
-      "description": "Projeto para criação e gerenciamento de agentes de IA personalizados, onde cada agente possui identidade própria, dados de treinamento e integração com o WhatsApp.",
+      "title": "Listening Platform",
+      "description": "Dictation app for practicing English listening: paste a YouTube video, hear one sentence at a time and type what you heard. Includes spaced review, easy/medium/hard modes, a personal dictionary and a diary with a translation helper. It also exposes a remote MCP server, so an AI assistant can create lessons and analyze progress. Solo project (private repository).",
+      "tags": [
+        "Angular",
+        "NestJS",
+        "PostgreSQL",
+        "pg-boss",
+        "Docker",
+        "MCP",
+        "TypeScript"
+      ],
+      "images": [],
+      "links": [],
+      "order": 0
+    },
+    {
+      "title": "AgenT - AI Agents for WhatsApp",
+      "description": "SaaS for creating custom AI agents that answer customers on WhatsApp. Each agent has its own identity, training data (RAG with embeddings), WhatsApp connection by QR code and a test panel. Lead qualification is controlled by code, so the agent always collects the required data. Solo project (private repository).",
       "tags": [
         "React",
-        "Node",
+        "Node.js",
+        "Express",
+        "RAG",
+        "OpenRouter",
         "MySQL",
-        "MongoDB Atlas",
+        "MongoDB",
         "Tailwind"
       ],
       "images": [
@@ -242,26 +413,67 @@ export const defaultContent = {
       ],
       "links": [
         {
-          "label": "Front",
-          "url": "https://github.com/GiselleBalieiro/AgenT",
-          "kind": "github"
-        },
-        {
-          "label": "Back",
-          "url": "https://github.com/GiselleBalieiro/ia-rag-api",
-          "kind": "github"
-        },
-        {
           "label": "Demo",
           "url": "https://agent-gules-alpha.vercel.app/",
           "kind": "external"
         }
       ],
-      "order": 0
+      "order": 1
+    },
+    {
+      "title": "Financial System",
+      "description": "White-label finance platform: accounts payable and receivable, suppliers, bank accounts, cash-flow dashboard, budget vs. actual, credit-card billing cycles and bank-statement import from OFX, CSV and PDF with duplicate detection. Solo project (private repository).",
+      "tags": [
+        "TypeScript",
+        "Express",
+        "MongoDB",
+        "React",
+        "TanStack Query",
+        "Vitest",
+        "Vercel"
+      ],
+      "images": [],
+      "links": [],
+      "order": 2
+    },
+    {
+      "title": "Delicie - Bakery Website",
+      "description": "Client project: marketing site and online menu for a bakery, with orders sent straight to WhatsApp, seasonal pages and Google Tag Manager conversion tracking. A script generates the menu photos with AI and updates the code automatically.",
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "shadcn/ui",
+        "OpenAI"
+      ],
+      "images": [],
+      "links": [],
+      "order": 3
+    },
+    {
+      "title": "Portfolio + Headless CMS",
+      "description": "This website. It has an admin panel to edit all content through its own API, image uploads to Cloudinary and an AI chatbot (RAG) that answers questions about me.",
+      "tags": [
+        "React",
+        "Vite",
+        "Tailwind",
+        "Framer Motion",
+        "Express",
+        "MongoDB"
+      ],
+      "images": [],
+      "links": [
+        {
+          "label": "Front",
+          "url": "https://github.com/GiselleBalieiro/My-portfolio",
+          "kind": "github"
+        }
+      ],
+      "order": 4
     },
     {
       "title": "Expense Converter",
-      "description": "Projeto desenvolvido em React com foco no controle de despesas internacionais, permitindo o registro de gastos e a conversão de valores entre moedas utilizando taxas de câmbio atualizadas.",
+      "description": "React app for tracking international expenses: register spending and convert values between currencies with up-to-date exchange rates.",
       "tags": [
         "React",
         "JavaScript",
@@ -284,11 +496,11 @@ export const defaultContent = {
           "kind": "external"
         }
       ],
-      "order": 1
+      "order": 5
     },
     {
       "title": "Product Registration",
-      "description": "Projeto desenvolvido com foco no aprendizado e prática de React, simulando um sistema de gestão de estoque com controle e organização de produtos.",
+      "description": "React practice project that simulates an inventory system for managing and organizing products.",
       "tags": [
         "React",
         "React Router",
@@ -311,7 +523,7 @@ export const defaultContent = {
           "kind": "external"
         }
       ],
-      "order": 2
+      "order": 6
     }
   ],
   "certificates": [
